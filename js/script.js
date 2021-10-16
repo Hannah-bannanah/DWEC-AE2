@@ -27,6 +27,18 @@ const leyendaRestaurante = document.createElement("legend");
 leyendaRestaurante.textContent = "Sobre el pedido";
 fieldsetRestaurante.appendChild(leyendaRestaurante);
 
+const labelSelect = document.createElement("label");
+labelSelect.setAttribute("for", "restaurante");
+labelSelect.textContent = "Elige un restaurante";
+fieldsetRestaurante.appendChild(labelSelect);
+
+const selectRestaurante = document.createElement("select");
+selectRestaurante.setAttribute("name", "restaurante");
+selectRestaurante.setAttribute("id", "restaurante");
+selectRestaurante.setAttribute("required", "true");
+fieldsetRestaurante.appendChild(selectRestaurante);
+
+
 //creacion de la seccion de acciones
 //boton de envio
 const submit = document.createElement("button");
