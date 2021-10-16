@@ -4,39 +4,57 @@
 const mainDiv = document.querySelector(".container");
 
 const form = document.createElement("form");
+form.setAttribute("action", "#");
+form.setAttribute("method", "post");
 mainDiv.appendChild(form);
+
+const fieldsetGeneral = document.createElement("fieldset");
+form.appendChild(fieldsetGeneral);
+
+const leyendaFormulario = document.createElement("legend");
+leyendaFormulario.textContent = "Realizar Pedido";
+leyendaFormulario.classList.add("form-title");
+fieldsetGeneral.appendChild(leyendaFormulario);
 
 const fieldsetContacto = document.createElement("fieldset");
 fieldsetContacto.classList.add("contacto");
-form.appendChild(fieldsetContacto);
+fieldsetGeneral.appendChild(fieldsetContacto);
 
 const fieldsetOpciones = document.createElement("fieldset");
 fieldsetOpciones.classList.add("opciones-pizza");
-form.appendChild(fieldsetOpciones);
+fieldsetGeneral.appendChild(fieldsetOpciones);
 
 const fieldsetRestaurante = document.createElement("fieldset");
 fieldsetRestaurante.classList.add("restaurante");
-form.appendChild(fieldsetRestaurante)
+fieldsetGeneral.appendChild(fieldsetRestaurante)
 
 const fieldsetAcciones = document.createElement("fieldset");
-fieldsetAcciones.classList.add("acciones");
-form.appendChild(fieldsetAcciones);
+fieldsetAcciones.classList.add("form__actions");
+fieldsetGeneral.appendChild(fieldsetAcciones);
 
-//creacion de la seccion Restaurante
+//creacion de la seccion Restaurante 
 const leyendaRestaurante = document.createElement("legend");
 leyendaRestaurante.textContent = "Sobre el pedido";
 fieldsetRestaurante.appendChild(leyendaRestaurante);
 
+const row1Rest = document.createElement("div");
+row1Rest.classList.add("fieldset-row");
+fieldsetRestaurante.appendChild(row1Rest);
+
+const r1c1Rest = document.createElement("div");
+r1c1Rest.classList.add("fieldset-column");
+row1Rest.appendChild(r1c1Rest);
+
 const labelSelect = document.createElement("label");
 labelSelect.setAttribute("for", "restaurante");
 labelSelect.textContent = "Elige un restaurante";
-fieldsetRestaurante.appendChild(labelSelect);
+r1c1Rest.appendChild(labelSelect);
 
 const selectRestaurante = document.createElement("select");
 selectRestaurante.setAttribute("name", "restaurante");
 selectRestaurante.setAttribute("id", "restaurante");
 selectRestaurante.setAttribute("required", "true");
-fieldsetRestaurante.appendChild(selectRestaurante);
+r1c1Rest.appendChild(selectRestaurante);
 
 const opcionA = document.createElement("option");
 opcionA.setAttribute("value","res1");
@@ -58,6 +76,27 @@ selectRestaurante.appendChild(opcionA);
 selectRestaurante.appendChild(opcionB);
 selectRestaurante.appendChild(opcionC);
 selectRestaurante.appendChild(opcionD);
+
+const row2Rest = document.createElement("div");
+row2Rest.classList.add("fieldset-row");
+fieldsetRestaurante.appendChild(row2Rest);
+
+const r2c1Rest = document.createElement("div");
+r2c1Rest.classList.add("fieldset-column");
+r2c1Rest.classList.add("inline-column");
+row2Rest.appendChild(r2c1Rest);
+
+const recoger = document.createElement("input");
+recoger.setAttribute("type", "checkbox");
+recoger.setAttribute("name", "recoger");
+recoger.setAttribute("id", "recoger");
+recoger.setAttribute("value", "s");
+r2c1Rest.appendChild(recoger);
+
+const labelRecoger = document.createElement("label");
+labelRecoger.setAttribute("for", "recoger");
+labelRecoger.textContent = "Quiero recoger mi pedido en el restaurante";
+r2c1Rest.appendChild(labelRecoger);
 
 //creacion de la seccion de acciones
 //boton de envio
