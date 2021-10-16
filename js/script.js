@@ -38,6 +38,26 @@ selectRestaurante.setAttribute("id", "restaurante");
 selectRestaurante.setAttribute("required", "true");
 fieldsetRestaurante.appendChild(selectRestaurante);
 
+const opcionA = document.createElement("option");
+opcionA.setAttribute("value","res1");
+opcionA.textContent = "La casina de Paulina";
+
+const opcionB = document.createElement("option");
+opcionB.setAttribute("value","res2");
+opcionB.textContent = "Ixchel's Hollywok";
+
+const opcionC = document.createElement("option");
+opcionC.setAttribute("value","res3");
+opcionC.textContent = "PizzalPilpil";
+
+const opcionD = document.createElement("option");
+opcionD.setAttribute("value","res4");
+opcionD.textContent = "La Pizza Pagana de Jana";
+
+selectRestaurante.appendChild(opcionA);
+selectRestaurante.appendChild(opcionB);
+selectRestaurante.appendChild(opcionC);
+selectRestaurante.appendChild(opcionD);
 
 //creacion de la seccion de acciones
 //boton de envio
