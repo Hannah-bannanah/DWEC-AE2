@@ -52,21 +52,47 @@ const labelCheckbox = document.createElement("label");
 labelCheckbox.textContent = "Elige los ingredientes";
 r1c1Opc.appendChild(labelCheckbox);
 
+
 // Nodos del 1er Checkbox 
 const inpCbox1 = document.createElement("input");
 inpCbox1.setAttribute("type", "checkbox");
 inpCbox1.setAttribute("id", "cbox1");
-inpCbox1.setAttribute("value", "Mozzarella");
-inpCbox1.textContent="Mozzarella";
-r1c1Opc.appendChild(inpCbox1); 
+inpCbox1.setAttribute("value", "Quesos");
+//etiqueta label para el checkbox
+const labelCbox1 = document.createElement("label");
+labelCbox1.setAttribute("id", "labelcbox1");
+labelCbox1.appendChild(document.createTextNode("Mezcla de quesos"));
+//Vincular el checkbox y label al div
+r1c1Opc.appendChild(inpCbox1);
+r1c1Opc.appendChild(labelCbox1); 
+
 
 // Nodos del 2º Checkbox
 const inpCbox2 = document.createElement("input");
 inpCbox2.setAttribute("type", "checkbox");
 inpCbox2.setAttribute("id", "cbox2");
-inpCbox2.setAttribute("value", "Champiñores");
-inpCbox2.textContent="Champiñones";
-r1c1Opc.appendChild(inpCbox2); 
+inpCbox2.setAttribute("value", "Champiñones");
+//etiqueta label para el checkbox
+const labelCbox2 = document.createElement("label");
+labelCbox2.setAttribute("id", "labelcbox2");
+labelCbox2.appendChild(document.createTextNode("Champiñones"));
+//Vincular el checkbox y label al div
+r1c1Opc.appendChild(inpCbox2);
+r1c1Opc.appendChild(labelCbox2); 
+
+
+// Nodos del 3er Checkbox
+const inpCbox3 = document.createElement("input");
+inpCbox3.setAttribute("type", "checkbox");
+inpCbox3.setAttribute("id", "cbox3");
+inpCbox3.setAttribute("value", "Bacon");
+//etiqueta label para el checkbox
+const labelCbox3 = document.createElement("label");
+labelCbox3.setAttribute("id", "labelcbox3");
+labelCbox3.appendChild(document.createTextNode("Pimientos"));
+//Vincular el checkbox y label al div
+r1c1Opc.appendChild(inpCbox3);
+r1c1Opc.appendChild(labelCbox3); 
 
 
 
