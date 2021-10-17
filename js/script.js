@@ -32,6 +32,32 @@ const fieldsetAcciones = document.createElement("fieldset");
 fieldsetAcciones.classList.add("form__actions");
 fieldsetGeneral.appendChild(fieldsetAcciones);
 
+//creacion de la seccion Opciones-pizza
+const leyendaOpciones = document.createElement("legend");
+leyendaOpciones.textContent = "¿Cómo te apetece la pizza?";
+fieldsetOpciones.appendChild(leyendaOpciones);
+
+/* div de la 1ª fila de las diversas opciones de pizza*/
+const row1Opc = document.createElement("div");
+row1Opc.classList.add("fieldset-row");
+fieldsetOpciones.appendChild(row1Opc);
+
+/* div de la columna donde irán los ingredientes*/
+const r1c1Opc = document.createElement("div");
+r1c1Opc.classList.add("fieldset-column");
+row1Opc.appendChild(r1c1Opc);
+
+/* Nodos de la etiqueta label (ingredientes)*/
+const labelCheckbox = document.createElement("label");
+labelCheckbox.textContent = "Elige los ingredientes";
+r1c1Opc.appendChild(labelCheckbox);
+
+/* div de la columna donde irá una imagen*/
+const r1c2Opc = document.createElement("div");
+r1c2Opc.classList.add("fieldset-column");
+row1Opc.appendChild(r1c2Opc);
+
+
 //creacion de la seccion Restaurante 
 const leyendaRestaurante = document.createElement("legend");
 leyendaRestaurante.textContent = "Sobre el pedido";
