@@ -32,6 +32,12 @@ const fieldsetAcciones = document.createElement("fieldset");
 fieldsetAcciones.classList.add("form__actions");
 fieldsetGeneral.appendChild(fieldsetAcciones);
 
+//creacion de la seccion Opciones-pizza
+const leyendaOpciones = document.createElement("legend");
+leyendaOpciones.textContent = "¿Cómo te apetece la pizza?";
+fieldsetOpciones.appendChild(leyendaOpciones);
+
+
 //creacion de la seccion Restaurante 
 const leyendaRestaurante = document.createElement("legend");
 leyendaRestaurante.textContent = "Sobre el pedido";
