@@ -130,7 +130,7 @@ rowCbox4.appendChild(inpCbox4);
 rowCbox4.appendChild(labelCbox4);
 
 
-// Contenedor del 5º Checkbox 
+// Contenedor del 5º Checkbox (inline)
 const rowCbox5 = document.createElement("div");
 rowCbox5.classList.add("inline-column");
 r1c1Opc.appendChild(rowCbox5);
