@@ -32,25 +32,45 @@ const fieldsetAcciones = document.createElement("fieldset");
 fieldsetAcciones.classList.add("form__actions");
 fieldsetGeneral.appendChild(fieldsetAcciones);
 
-//creacion de la seccion Opciones-pizza
+//===================================================== creacion de la seccion Opciones-pizza ===================================================== 
 const leyendaOpciones = document.createElement("legend");
 leyendaOpciones.textContent = "¿Cómo te apetece la pizza?";
 fieldsetOpciones.appendChild(leyendaOpciones);
 
-/* div de la 1ª fila de las diversas opciones de pizza*/
+// div de la 1ª fila de las diversas opciones de pizza
 const row1Opc = document.createElement("div");
 row1Opc.classList.add("fieldset-row");
 fieldsetOpciones.appendChild(row1Opc);
 
-/* div de la columna donde irán los ingredientes*/
+// div de la columna donde irán los ingredientes
 const r1c1Opc = document.createElement("div");
 r1c1Opc.classList.add("fieldset-column");
 row1Opc.appendChild(r1c1Opc);
 
-/* Nodos de la etiqueta label (ingredientes)*/
+// Nodos de la etiqueta label (ingredientes)
 const labelCheckbox = document.createElement("label");
 labelCheckbox.textContent = "Elige los ingredientes";
 r1c1Opc.appendChild(labelCheckbox);
+
+// Nodos del 1er Checkbox 
+const inpCbox1 = document.createElement("input");
+inpCbox1.setAttribute("type", "checkbox");
+inpCbox1.setAttribute("id", "cbox1");
+inpCbox1.setAttribute("value", "Mozzarella");
+inpCbox1.textContent="Mozzarella";
+r1c1Opc.appendChild(inpCbox1); 
+
+// Nodos del 2º Checkbox
+const inpCbox2 = document.createElement("input");
+inpCbox2.setAttribute("type", "checkbox");
+inpCbox2.setAttribute("id", "cbox2");
+inpCbox2.setAttribute("value", "Champiñores");
+inpCbox2.textContent="Champiñones";
+r1c1Opc.appendChild(inpCbox2); 
+
+
+
+
 
 /* div de la columna donde irá una imagen*/
 const r1c2Opc = document.createElement("div");
