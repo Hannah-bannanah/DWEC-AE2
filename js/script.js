@@ -45,6 +45,7 @@ fieldsetOpciones.appendChild(row1Opc);
 // div de la columna donde irán los ingredientes
 const r1c1Opc = document.createElement("div");
 r1c1Opc.classList.add("fieldset-column");
+
 row1Opc.appendChild(r1c1Opc);
 
 // Nodos de la etiqueta label (ingredientes)
@@ -53,6 +54,10 @@ labelCheckbox.textContent = "Elige los ingredientes";
 r1c1Opc.appendChild(labelCheckbox);
 
 
+// Contenedor del 1er Checkbox 
+const rowCbox1 = document.createElement("div");
+rowCbox1.classList.add("inline-column");
+r1c1Opc.appendChild(rowCbox1);
 // Nodos del 1er Checkbox 
 const inpCbox1 = document.createElement("input");
 inpCbox1.setAttribute("type", "checkbox");
@@ -61,12 +66,16 @@ inpCbox1.setAttribute("value", "Quesos");
 //etiqueta label para el checkbox
 const labelCbox1 = document.createElement("label");
 labelCbox1.setAttribute("id", "labelcbox1");
-labelCbox1.appendChild(document.createTextNode("Mezcla de quesos"));
+labelCbox1.setAttribute("for", "inpCbox1");
+labelCbox1.textContent="Mezcla de quesos";
 //Vincular el checkbox y label al div
-r1c1Opc.appendChild(inpCbox1);
-r1c1Opc.appendChild(labelCbox1); 
+rowCbox1.appendChild(inpCbox1);
+rowCbox1.appendChild(labelCbox1); 
 
-
+// Contenedor del 2º Checkbox 
+const rowCbox2 = document.createElement("div");
+rowCbox2.classList.add("inline-column");
+r1c1Opc.appendChild(rowCbox2);
 // Nodos del 2º Checkbox
 const inpCbox2 = document.createElement("input");
 inpCbox2.setAttribute("type", "checkbox");
@@ -75,12 +84,16 @@ inpCbox2.setAttribute("value", "Champiñones");
 //etiqueta label para el checkbox
 const labelCbox2 = document.createElement("label");
 labelCbox2.setAttribute("id", "labelcbox2");
-labelCbox2.appendChild(document.createTextNode("Champiñones"));
+labelCbox2.setAttribute("for", "inpCbox2");
+labelCbox2.textContent="Champiñones";
 //Vincular el checkbox y label al div
-r1c1Opc.appendChild(inpCbox2);
-r1c1Opc.appendChild(labelCbox2); 
+rowCbox2.appendChild(inpCbox2);
+rowCbox2.appendChild(labelCbox2); 
 
-
+// Contenedor del 3er Checkbox 
+const rowCbox3 = document.createElement("div");
+rowCbox3.classList.add("inline-column");
+r1c1Opc.appendChild(rowCbox3);
 // Nodos del 3er Checkbox
 const inpCbox3 = document.createElement("input");
 inpCbox3.setAttribute("type", "checkbox");
@@ -89,11 +102,16 @@ inpCbox3.setAttribute("value", "Bacon");
 //etiqueta label para el checkbox
 const labelCbox3 = document.createElement("label");
 labelCbox3.setAttribute("id", "labelcbox3");
-labelCbox3.appendChild(document.createTextNode("Pimientos"));
+labelCbox3.setAttribute("for", "inpCbox3");
+labelCbox3.textContent="Bacon";
 //Vincular el checkbox y label al div
-r1c1Opc.appendChild(inpCbox3);
-r1c1Opc.appendChild(labelCbox3);
+rowCbox3.appendChild(inpCbox3);
+rowCbox3.appendChild(labelCbox3);
 
+// Contenedor del 4º Checkbox 
+const rowCbox4 = document.createElement("div");
+rowCbox4.classList.add("inline-column");
+r1c1Opc.appendChild(rowCbox4);
 // Nodos del 4º Checkbox
 const inpCbox4 = document.createElement("input");
 inpCbox4.setAttribute("type", "checkbox");
@@ -102,12 +120,20 @@ inpCbox4.setAttribute("value", "Aceitunas");
 //etiqueta label para el checkbox
 const labelCbox4 = document.createElement("label");
 labelCbox4.setAttribute("id", "labelcbox4");
-labelCbox4.appendChild(document.createTextNode("Tomates cherry"));
+labelCbox4.setAttribute("for", "inpCbox4");
+labelCbox4.textContent="Tomates cherry";
 //Vincular el checkbox y label al div
 r1c1Opc.appendChild(inpCbox4);
-r1c1Opc.appendChild(labelCbox4); 
+r1c1Opc.appendChild(labelCbox4);
+//Vincular el checkbox y label al div
+rowCbox4.appendChild(inpCbox4);
+rowCbox4.appendChild(labelCbox4);
 
 
+// Contenedor del 5º Checkbox 
+const rowCbox5 = document.createElement("div");
+rowCbox5.classList.add("inline-column");
+r1c1Opc.appendChild(rowCbox5);
 // Nodos del 5º Checkbox
 const inpCbox5 = document.createElement("input");
 inpCbox5.setAttribute("type", "checkbox");
@@ -116,12 +142,11 @@ inpCbox5.setAttribute("value", "Pollo");
 //etiqueta label para el checkbox
 const labelCbox5 = document.createElement("label");
 labelCbox5.setAttribute("id", "labelcbox5");
-labelCbox5.appendChild(document.createTextNode("Pollo"));
+labelCbox5.setAttribute("for", "cbox5");
+labelCbox5.textContent="Pollo";
 //Vincular el checkbox y label al div
-r1c1Opc.appendChild(inpCbox5);
-r1c1Opc.appendChild(labelCbox5);
-
-
+rowCbox5.appendChild(inpCbox5);
+rowCbox5.appendChild(labelCbox5);
 
 
 
