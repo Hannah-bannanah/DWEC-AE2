@@ -32,30 +32,111 @@ const fieldsetAcciones = document.createElement("fieldset");
 fieldsetAcciones.classList.add("form__actions");
 fieldsetGeneral.appendChild(fieldsetAcciones);
 
-//creacion de la seccion Opciones-pizza
+//===================================================== creacion de la seccion Opciones-pizza ===================================================== 
 const leyendaOpciones = document.createElement("legend");
 leyendaOpciones.textContent = "¿Cómo te apetece la pizza?";
 fieldsetOpciones.appendChild(leyendaOpciones);
 
-/* div de la 1ª fila de las diversas opciones de pizza*/
+// div de la 1ª fila de las diversas opciones de pizza
 const row1Opc = document.createElement("div");
 row1Opc.classList.add("fieldset-row");
 fieldsetOpciones.appendChild(row1Opc);
 
-/* div de la columna donde irán los ingredientes*/
+// div de la columna donde irán los ingredientes
 const r1c1Opc = document.createElement("div");
 r1c1Opc.classList.add("fieldset-column");
 row1Opc.appendChild(r1c1Opc);
 
-/* Nodos de la etiqueta label (ingredientes)*/
+// Nodos de la etiqueta label (ingredientes)
 const labelCheckbox = document.createElement("label");
 labelCheckbox.textContent = "Elige los ingredientes";
 r1c1Opc.appendChild(labelCheckbox);
 
-/* div de la columna donde irá una imagen*/
+
+// Nodos del 1er Checkbox 
+const inpCbox1 = document.createElement("input");
+inpCbox1.setAttribute("type", "checkbox");
+inpCbox1.setAttribute("id", "cbox1");
+inpCbox1.setAttribute("value", "Quesos");
+//etiqueta label para el checkbox
+const labelCbox1 = document.createElement("label");
+labelCbox1.setAttribute("id", "labelcbox1");
+labelCbox1.appendChild(document.createTextNode("Mezcla de quesos"));
+//Vincular el checkbox y label al div
+r1c1Opc.appendChild(inpCbox1);
+r1c1Opc.appendChild(labelCbox1); 
+
+
+// Nodos del 2º Checkbox
+const inpCbox2 = document.createElement("input");
+inpCbox2.setAttribute("type", "checkbox");
+inpCbox2.setAttribute("id", "cbox2");
+inpCbox2.setAttribute("value", "Champiñones");
+//etiqueta label para el checkbox
+const labelCbox2 = document.createElement("label");
+labelCbox2.setAttribute("id", "labelcbox2");
+labelCbox2.appendChild(document.createTextNode("Champiñones"));
+//Vincular el checkbox y label al div
+r1c1Opc.appendChild(inpCbox2);
+r1c1Opc.appendChild(labelCbox2); 
+
+
+// Nodos del 3er Checkbox
+const inpCbox3 = document.createElement("input");
+inpCbox3.setAttribute("type", "checkbox");
+inpCbox3.setAttribute("id", "cbox3");
+inpCbox3.setAttribute("value", "Bacon");
+//etiqueta label para el checkbox
+const labelCbox3 = document.createElement("label");
+labelCbox3.setAttribute("id", "labelcbox3");
+labelCbox3.appendChild(document.createTextNode("Pimientos"));
+//Vincular el checkbox y label al div
+r1c1Opc.appendChild(inpCbox3);
+r1c1Opc.appendChild(labelCbox3);
+
+// Nodos del 4º Checkbox
+const inpCbox4 = document.createElement("input");
+inpCbox4.setAttribute("type", "checkbox");
+inpCbox4.setAttribute("id", "cbox4");
+inpCbox4.setAttribute("value", "Aceitunas");
+//etiqueta label para el checkbox
+const labelCbox4 = document.createElement("label");
+labelCbox4.setAttribute("id", "labelcbox4");
+labelCbox4.appendChild(document.createTextNode("Tomates cherry"));
+//Vincular el checkbox y label al div
+r1c1Opc.appendChild(inpCbox4);
+r1c1Opc.appendChild(labelCbox4); 
+
+
+// Nodos del 5º Checkbox
+const inpCbox5 = document.createElement("input");
+inpCbox5.setAttribute("type", "checkbox");
+inpCbox5.setAttribute("id", "cbox5");
+inpCbox5.setAttribute("value", "Pollo");
+//etiqueta label para el checkbox
+const labelCbox5 = document.createElement("label");
+labelCbox5.setAttribute("id", "labelcbox5");
+labelCbox5.appendChild(document.createTextNode("Pollo"));
+//Vincular el checkbox y label al div
+r1c1Opc.appendChild(inpCbox5);
+r1c1Opc.appendChild(labelCbox5);
+
+
+
+
+
+// div de la columna donde irá una imagen
 const r1c2Opc = document.createElement("div");
 r1c2Opc.classList.add("fieldset-column");
 row1Opc.appendChild(r1c2Opc);
+//Nodo de la img
+const img1 = document.createElement("img");
+img1.setAttribute("alt", "pizza1");
+img1.src="images/pizza1.jpg";
+img1.width="200";
+//Vincular la img al div
+r1c2Opc.appendChild(img1);
+
 
 
 //creacion de la seccion Restaurante 
