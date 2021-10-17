@@ -125,10 +125,18 @@ r1c1Opc.appendChild(labelCbox5);
 
 
 
-/* div de la columna donde irá una imagen*/
+// div de la columna donde irá una imagen
 const r1c2Opc = document.createElement("div");
 r1c2Opc.classList.add("fieldset-column");
 row1Opc.appendChild(r1c2Opc);
+//Nodo de la img
+const img1 = document.createElement("img");
+img1.setAttribute("alt", "pizza1");
+img1.src="images/pizza1.jpg";
+img1.width="200";
+//Vincular la img al div
+r1c2Opc.appendChild(img1);
+
 
 
 //creacion de la seccion Restaurante 
