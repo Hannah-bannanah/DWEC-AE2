@@ -173,6 +173,197 @@ r1c2Opc.appendChild(img1);
 ===================================================== creacion de la seccion Pedido ===================================================== 
 */
 
+
+
+/*--------------------------
+--------Radio Button 1------
+---------------------------*/
+
+//Div de la 1ª fila de los tipos de masa
+const row2Opc = document.createElement("div");
+row2Opc.classList.add("fieldset-row");
+fieldsetOpciones.appendChild(row2Opc);
+
+//Div de la columna donde irán los tipos de masa
+const r2c1Opc = document.createElement("div");
+r2c1Opc.classList.add("fieldset-column");
+row2Opc.appendChild(r2c1Opc);
+
+//Nodos de la etiqueta label (masa)
+const labelRbMasa = document.createElement("label");
+labelRbMasa.textContent = "Elige el tipo de masa";
+r2c1Opc.appendChild(labelRbMasa);
+
+
+
+//Contenedor del 1er Radio Button 
+const rowRb1 = document.createElement("div");
+rowRb1.classList.add("inline-column");
+r2c1Opc.appendChild(rowRb1);
+//Nodos 
+const inpRb1 = document.createElement("input");
+inpRb1.setAttribute("type", "radio");
+inpRb1.setAttribute("id", "rb1");
+inpRb1.setAttribute("value", "fina");
+//Etiqueta label
+const labelRbMasa1 = document.createElement("label");
+labelRbMasa1.setAttribute("id", "labelrb1");
+labelRbMasa1.setAttribute("for", "inpRb1");
+labelRbMasa1.textContent="Fina";
+//Vincular el radio button y label al div
+rowRb1.appendChild(inpRb1);
+rowRb1.appendChild(labelRbMasa1); 
+
+//Contenedor del 2º Radio Button 
+const rowRb2 = document.createElement("div");
+rowRb2.classList.add("inline-column");
+r2c1Opc.appendChild(rowRb2);
+//Nodos 
+const inpRb2 = document.createElement("input");
+inpRb2.setAttribute("type", "radio");
+inpRb2.setAttribute("id", "rb2");
+inpRb2.setAttribute("value", "normal");
+//Etiqueta label
+const labelRbMasa2 = document.createElement("label");
+labelRbMasa2.setAttribute("id", "labelrb2");
+labelRbMasa2.setAttribute("for", "inpRb2");
+labelRbMasa2.textContent="Normal";
+//Vincular el radio button y label al div
+rowRb2.appendChild(inpRb2);
+rowRb2.appendChild(labelRbMasa2);
+
+//Contenedor del 3er Radio Button 
+const rowRb3 = document.createElement("div");
+rowRb3.classList.add("inline-column");
+r2c1Opc.appendChild(rowRb3);
+//Nodos 
+const inpRb3 = document.createElement("input");
+inpRb3.setAttribute("type", "radio");
+inpRb3.setAttribute("id", "rb3");
+inpRb3.setAttribute("value", "extra");
+//Etiqueta label
+const labelRbMasa3 = document.createElement("label");
+labelRbMasa3.setAttribute("id", "labelrb3");
+labelRbMasa3.setAttribute("for", "inpRb3");
+labelRbMasa3.textContent="Extra";
+//Vincular el radio button y label al div
+rowRb3.appendChild(inpRb3);
+rowRb3.appendChild(labelRbMasa3);
+
+//Contenedor del 4º Radio Button 
+const rowRb4 = document.createElement("div");
+rowRb4.classList.add("inline-column");
+r2c1Opc.appendChild(rowRb4);
+//Nodos 
+const inpRb4 = document.createElement("input");
+inpRb4.setAttribute("type", "radio");
+inpRb4.setAttribute("id", "rb4");
+inpRb4.setAttribute("value", "extraqueso");
+//Etiqueta label
+const labelRbMasa4 = document.createElement("label");
+labelRbMasa4.setAttribute("id", "labelrb4");
+labelRbMasa4.setAttribute("for", "inpRb4");
+labelRbMasa4.textContent="Extra con queso";
+//Vincular el radio button y label al div
+rowRb4.appendChild(inpRb4);
+rowRb4.appendChild(labelRbMasa4);
+
+
+/*--------------------------
+--------Radio Button 2------
+---------------------------*/
+
+//Div de la 1ª fila de los tamaños de pizz
+const row3Opc = document.createElement("div");
+row3Opc.classList.add("fieldset-row");
+fieldsetOpciones.appendChild(row3Opc);
+
+//Div de la columna donde irán los tamaños de pizza
+const r3c1Opc = document.createElement("div");
+r3c1Opc.classList.add("fieldset-column");
+row3Opc.appendChild(r3c1Opc);
+
+//Nodos de la etiqueta label (tamaño)
+const labelRbTamaño = document.createElement("label");
+labelRbMasa.textContent = "Elige el tipo de masa";
+r2c1Opc.appendChild(labelRbMasa);
+
+
+
+//Contenedor del 1er Radio Button 
+const rowRb1 = document.createElement("div");
+rowRb1.classList.add("inline-column");
+r2c1Opc.appendChild(rowRb1);
+//Nodos 
+const inpRb1 = document.createElement("input");
+inpRb1.setAttribute("type", "radio");
+inpRb1.setAttribute("id", "rb1");
+inpRb1.setAttribute("value", "fina");
+//Etiqueta label
+const labelRbMasa1 = document.createElement("label");
+labelRbMasa1.setAttribute("id", "labelrb1");
+labelRbMasa1.setAttribute("for", "inpRb1");
+labelRbMasa1.textContent="Fina";
+//Vincular el radio button y label al div
+rowRb1.appendChild(inpRb1);
+rowRb1.appendChild(labelRbMasa1); 
+
+//Contenedor del 2º Radio Button 
+const rowRb2 = document.createElement("div");
+rowRb2.classList.add("inline-column");
+r2c1Opc.appendChild(rowRb2);
+//Nodos 
+const inpRb2 = document.createElement("input");
+inpRb2.setAttribute("type", "radio");
+inpRb2.setAttribute("id", "rb2");
+inpRb2.setAttribute("value", "normal");
+//Etiqueta label
+const labelRbMasa2 = document.createElement("label");
+labelRbMasa2.setAttribute("id", "labelrb2");
+labelRbMasa2.setAttribute("for", "inpRb2");
+labelRbMasa2.textContent="Normal";
+//Vincular el radio button y label al div
+rowRb2.appendChild(inpRb2);
+rowRb2.appendChild(labelRbMasa2);
+
+//Contenedor del 3er Radio Button 
+const rowRb3 = document.createElement("div");
+rowRb3.classList.add("inline-column");
+r2c1Opc.appendChild(rowRb3);
+//Nodos 
+const inpRb3 = document.createElement("input");
+inpRb3.setAttribute("type", "radio");
+inpRb3.setAttribute("id", "rb3");
+inpRb3.setAttribute("value", "extra");
+//Etiqueta label
+const labelRbMasa3 = document.createElement("label");
+labelRbMasa3.setAttribute("id", "labelrb3");
+labelRbMasa3.setAttribute("for", "inpRb3");
+labelRbMasa3.textContent="Extra";
+//Vincular el radio button y label al div
+rowRb3.appendChild(inpRb3);
+rowRb3.appendChild(labelRbMasa3);
+
+//Contenedor del 4º Radio Button 
+const rowRb4 = document.createElement("div");
+rowRb4.classList.add("inline-column");
+r2c1Opc.appendChild(rowRb4);
+//Nodos 
+const inpRb4 = document.createElement("input");
+inpRb4.setAttribute("type", "radio");
+inpRb4.setAttribute("id", "rb4");
+inpRb4.setAttribute("value", "extraqueso");
+//Etiqueta label
+const labelRbMasa4 = document.createElement("label");
+labelRbMasa4.setAttribute("id", "labelrb4");
+labelRbMasa4.setAttribute("for", "inpRb4");
+labelRbMasa4.textContent="Extra con queso";
+//Vincular el radio button y label al div
+rowRb4.appendChild(inpRb4);
+rowRb4.appendChild(labelRbMasa4);
+
+
+//creacion de la seccion Restaurante 
 //leyenda
 const leyendaRestaurante = document.createElement("legend");
 leyendaRestaurante.textContent = "Sobre el pedido";
