@@ -1,8 +1,13 @@
-/*Generacion de un formulario con javascript*/
+/**
+ * Generacion de un formulario con javascript
+*/
 
-//creacion de la estructura general del formulario
+/*
+===================================================== creacion de la estructura general del formulario ===================================================== 
+*/
 const mainDiv = document.querySelector(".container");
 
+//formulario
 const form = document.createElement("form");
 form.setAttribute("action", "#");
 form.setAttribute("method", "post");
@@ -16,23 +21,29 @@ leyendaFormulario.textContent = "Realizar Pedido";
 leyendaFormulario.classList.add("form-title");
 fieldsetGeneral.appendChild(leyendaFormulario);
 
+//fieldset de Contacto
 const fieldsetContacto = document.createElement("fieldset");
 fieldsetContacto.classList.add("contacto");
 fieldsetGeneral.appendChild(fieldsetContacto);
 
+//fieldset de Opciones
 const fieldsetOpciones = document.createElement("fieldset");
 fieldsetOpciones.classList.add("opciones-pizza");
 fieldsetGeneral.appendChild(fieldsetOpciones);
 
-const fieldsetRestaurante = document.createElement("fieldset");
-fieldsetRestaurante.classList.add("restaurante");
-fieldsetGeneral.appendChild(fieldsetRestaurante)
+//fieldset del pedido
+const fieldsetPedido = document.createElement("fieldset");
+fieldsetPedido.classList.add("restaurante");
+fieldsetGeneral.appendChild(fieldsetPedido)
 
+//fieldset de los botones de Submit y Reset
 const fieldsetAcciones = document.createElement("fieldset");
 fieldsetAcciones.classList.add("form__actions");
 fieldsetGeneral.appendChild(fieldsetAcciones);
 
-//===================================================== creacion de la seccion Opciones-pizza ===================================================== 
+/*
+===================================================== creacion de la seccion Opciones-pizza ===================================================== 
+*/
 const leyendaOpciones = document.createElement("legend");
 leyendaOpciones.textContent = "¿Cómo te apetece la pizza?";
 fieldsetOpciones.appendChild(leyendaOpciones);
@@ -163,20 +174,26 @@ img1.width="200";
 r1c2Opc.appendChild(img1);
 
 
+/*
+===================================================== creacion de la seccion Pedido ===================================================== 
+*/ 
 
-//creacion de la seccion Restaurante 
+//leyenda
 const leyendaRestaurante = document.createElement("legend");
 leyendaRestaurante.textContent = "Sobre el pedido";
-fieldsetRestaurante.appendChild(leyendaRestaurante);
+fieldsetPedido.appendChild(leyendaRestaurante);
 
+//primera fila (div para formato)
 const row1Rest = document.createElement("div");
 row1Rest.classList.add("fieldset-row");
-fieldsetRestaurante.appendChild(row1Rest);
+fieldsetPedido.appendChild(row1Rest);
 
+//primera columna(div para formato)
 const r1c1Rest = document.createElement("div");
 r1c1Rest.classList.add("fieldset-column");
 row1Rest.appendChild(r1c1Rest);
 
+//seleccionador del restaurante
 const labelSelect = document.createElement("label");
 labelSelect.setAttribute("for", "restaurante");
 labelSelect.textContent = "Elige un restaurante";
@@ -188,6 +205,7 @@ selectRestaurante.setAttribute("id", "restaurante");
 selectRestaurante.setAttribute("required", "true");
 r1c1Rest.appendChild(selectRestaurante);
 
+//opciones del select
 const opcionA = document.createElement("option");
 opcionA.setAttribute("value","res1");
 opcionA.textContent = "La casina de Paulina";
@@ -209,27 +227,6 @@ selectRestaurante.appendChild(opcionB);
 selectRestaurante.appendChild(opcionC);
 selectRestaurante.appendChild(opcionD);
 
-const row2Rest = document.createElement("div");
-row2Rest.classList.add("fieldset-row");
-fieldsetRestaurante.appendChild(row2Rest);
-
-const r2c1Rest = document.createElement("div");
-r2c1Rest.classList.add("fieldset-column");
-r2c1Rest.classList.add("inline-column");
-row2Rest.appendChild(r2c1Rest);
-
-const recoger = document.createElement("input");
-recoger.setAttribute("type", "checkbox");
-recoger.setAttribute("name", "recoger");
-recoger.setAttribute("id", "recoger");
-recoger.setAttribute("value", "s");
-r2c1Rest.appendChild(recoger);
-
-const labelRecoger = document.createElement("label");
-labelRecoger.setAttribute("for", "recoger");
-labelRecoger.textContent = "Quiero recoger mi pedido en el restaurante";
-r2c1Rest.appendChild(labelRecoger);
-
 //div de la columna donde irá la segunda imagen
 const r2c2Rest = document.createElement("div");
 r2c2Rest.classList.add("fieldset-column");
@@ -241,6 +238,31 @@ img2.src="images/pizzeria.jpg";
 img2.width="300";
 //Vincular la img al div
 r2c2Rest.appendChild(img2); 
+
+//segunda fila (div para formato)
+const row2Rest = document.createElement("div");
+row2Rest.classList.add("fieldset-row");
+fieldsetPedido.appendChild(row2Rest);
+
+//primera columna(div para formato)
+const r2c1Rest = document.createElement("div");
+r2c1Rest.classList.add("fieldset-column");
+r2c1Rest.classList.add("inline-column");
+row2Rest.appendChild(r2c1Rest);
+
+//checkbox terminos y condiciones
+const terminos = document.createElement("input");
+terminos.setAttribute("type", "checkbox");
+terminos.setAttribute("name", "recoger");
+terminos.setAttribute("id", "recoger");
+terminos.setAttribute("value", "s");
+terminos.setAttribute("required", "true");
+r2c1Rest.appendChild(terminos);
+
+const labelTerminos = document.createElement("label");
+labelTerminos.setAttribute("for", "recoger");
+labelTerminos.textContent = "Acepto los términos y condiciones";
+r2c1Rest.appendChild(labelTerminos);
 
 //creacion de la seccion de acciones
 //boton de envio
@@ -258,3 +280,7 @@ reset.setAttribute("name", "reset");
 reset.setAttribute("id", "reset");
 reset.textContent = "Borrar formulario";
 fieldsetAcciones.appendChild(reset);
+
+/*
+===================================================== validación del formulario ===================================================== 
+*/ 
