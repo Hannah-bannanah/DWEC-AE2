@@ -42,6 +42,11 @@ fieldsetAcciones.classList.add("form__actions");
 fieldsetGeneral.appendChild(fieldsetAcciones);
 
 /*
+===================================================== creacion de la seccion contacto ===================================================== 
+*/
+//TODO
+
+/*
 ===================================================== creacion de la seccion Opciones-pizza ===================================================== 
 */
 const leyendaOpciones = document.createElement("legend");
@@ -169,12 +174,6 @@ img1.width = "200";
 //Vincular la img al div
 r1c2Opc.appendChild(img1);
 
-/*
-===================================================== creacion de la seccion Pedido ===================================================== 
-*/
-
-
-
 /*--------------------------
 --------Radio Button 1------
 ---------------------------*/
@@ -206,6 +205,7 @@ inpRb1.setAttribute("type", "radio");
 inpRb1.setAttribute("id", "rb1");
 inpRb1.setAttribute("name", "rbmasa");
 inpRb1.setAttribute("value", "fina");
+inpRb1.setAttribute("required", "true");
 //Etiqueta label
 const labelRbMasa1 = document.createElement("label");
 labelRbMasa1.setAttribute("id", "labelrb1");
@@ -277,31 +277,33 @@ rowRb4.appendChild(labelRbMasa4);
 ---------------------------*/
 
 //Div de la 1ª fila de los tamaños de pizza
-const row3Opc = document.createElement("div");
-row3Opc.classList.add("fieldset-row");
-fieldsetOpciones.appendChild(row3Opc);
+// const row3Opc = document.createElement("div");
+// row3Opc.classList.add("fieldset-row");
+// fieldsetOpciones.appendChild(row3Opc);
 
 //Div de la columna donde irán los tipos de masa
-const r3c1Opc = document.createElement("div");
-r3c1Opc.classList.add("fieldset-column");
-row3Opc.appendChild(r3c1Opc);
+const r2c2Opc = document.createElement("div");
+r2c2Opc.classList.add("fieldset-column");
+row2Opc.appendChild(r2c2Opc);
 
 //Nodos de la etiqueta label (masa)
 const labelRbTam = document.createElement("label");
 labelRbTam.textContent = "Elige el tamaño";
-r3c1Opc.appendChild(labelRbTam);
+r2c2Opc.appendChild(labelRbTam);
 
 
 //Contenedor del 1er Radio Button 
 const rowRb5 = document.createElement("div");
 rowRb5.classList.add("inline-column");
-r3c1Opc.appendChild(rowRb5);
+r2c2Opc.appendChild(rowRb5);
 //Nodos 
 const inpRb5 = document.createElement("input");
 inpRb5.setAttribute("type", "radio");
 inpRb5.setAttribute("id", "rb5");
 inpRb5.setAttribute("name", "rbtam");
 inpRb5.setAttribute("value", "pequeña");
+inpRb5.setAttribute("required", "true");
+
 //Etiqueta label
 const labelRbTam5 = document.createElement("label");
 labelRbTam5.setAttribute("id", "labelrb5");
@@ -314,7 +316,7 @@ rowRb5.appendChild(labelRbTam5);
 //Contenedor del 2º Radio Button 
 const rowRb6 = document.createElement("div");
 rowRb6.classList.add("inline-column");
-r3c1Opc.appendChild(rowRb6);
+r2c2Opc.appendChild(rowRb6);
 //Nodos 
 const inpRb6 = document.createElement("input");
 inpRb6.setAttribute("type", "radio");
@@ -333,7 +335,7 @@ rowRb6.appendChild(labelRbTam6);
 //Contenedor del 3er Radio Button 
 const rowRb7 = document.createElement("div");
 rowRb7.classList.add("inline-column");
-r3c1Opc.appendChild(rowRb7);
+r2c2Opc.appendChild(rowRb7);
 //Nodos 
 const inpRb7 = document.createElement("input");
 inpRb7.setAttribute("type", "radio");
@@ -352,7 +354,7 @@ rowRb7.appendChild(labelRbTam7);
 //Contenedor del 4º Radio Button 
 const rowRb8 = document.createElement("div");
 rowRb8.classList.add("inline-column");
-r3c1Opc.appendChild(rowRb8);
+r2c2Opc.appendChild(rowRb8);
 //Nodos 
 const inpRb8 = document.createElement("input");
 inpRb8.setAttribute("type", "radio");
@@ -368,6 +370,10 @@ labelRbTam8.textContent="Dinosáurica";
 rowRb8.appendChild(inpRb8);
 rowRb8.appendChild(labelRbTam8);
 
+/*
+===================================================== creacion de la seccion Pedido ===================================================== 
+*/
+
 //creacion de la seccion Restaurante 
 //leyenda
 const leyendaRestaurante = document.createElement("legend");
@@ -375,26 +381,26 @@ leyendaRestaurante.textContent = "Sobre el pedido";
 fieldsetPedido.appendChild(leyendaRestaurante);
 
 //primera fila (div para formato)
-const row1Rest = document.createElement("div");
-row1Rest.classList.add("fieldset-row");
-fieldsetPedido.appendChild(row1Rest);
+const row1Ped = document.createElement("div");
+row1Ped.classList.add("fieldset-row");
+fieldsetPedido.appendChild(row1Ped);
 
 //primera columna(div para formato)
-const r1c1Rest = document.createElement("div");
-r1c1Rest.classList.add("fieldset-column");
-row1Rest.appendChild(r1c1Rest);
+const r1c1Ped = document.createElement("div");
+r1c1Ped.classList.add("fieldset-column");
+row1Ped.appendChild(r1c1Ped);
 
 //seleccionador del restaurante
 const labelSelect = document.createElement("label");
 labelSelect.setAttribute("for", "restaurante");
 labelSelect.textContent = "Elige un restaurante";
-r1c1Rest.appendChild(labelSelect);
+r1c1Ped.appendChild(labelSelect);
 
 const selectRestaurante = document.createElement("select");
 selectRestaurante.setAttribute("name", "restaurante");
 selectRestaurante.setAttribute("id", "restaurante");
 selectRestaurante.setAttribute("required", "true");
-r1c1Rest.appendChild(selectRestaurante);
+r1c1Ped.appendChild(selectRestaurante);
 
 //opciones del select
 const placeholder = document.createElement("option");
@@ -423,28 +429,32 @@ selectRestaurante.appendChild(opcionB);
 selectRestaurante.appendChild(opcionC);
 selectRestaurante.appendChild(opcionD);
 
+//textarea -TODO
+
+
+
 //div de la columna donde irá la segunda imagen
-const r2c2Rest = document.createElement("div");
-r2c2Rest.classList.add("fieldset-column");
-row1Rest.appendChild(r2c2Rest);
+const r2c2Ped = document.createElement("div");
+r2c2Ped.classList.add("fieldset-column");
+row1Ped.appendChild(r2c2Ped);
 //Nodo de la img
 const img2 = document.createElement("img");
 img2.setAttribute("alt", "pizzeria");
 img2.src = "images/pizzeria.jpg";
 img2.width = "300";
 //Vincular la img al div
-r2c2Rest.appendChild(img2);
+r2c2Ped.appendChild(img2);
 
 //segunda fila (div para formato)
-const row2Rest = document.createElement("div");
-row2Rest.classList.add("fieldset-row");
-fieldsetPedido.appendChild(row2Rest);
+const row2Ped = document.createElement("div");
+row2Ped.classList.add("fieldset-row");
+fieldsetPedido.appendChild(row2Ped);
 
 //primera columna(div para formato)
-const r2c1Rest = document.createElement("div");
-r2c1Rest.classList.add("fieldset-column");
-r2c1Rest.classList.add("inline-column");
-row2Rest.appendChild(r2c1Rest);
+const r2c1Ped = document.createElement("div");
+r2c1Ped.classList.add("fieldset-column");
+r2c1Ped.classList.add("inline-column");
+row2Ped.appendChild(r2c1Ped);
 
 //checkbox terminos y condiciones
 const terminos = document.createElement("input");
@@ -453,12 +463,12 @@ terminos.setAttribute("name", "recoger");
 terminos.setAttribute("id", "recoger");
 terminos.setAttribute("value", "s");
 terminos.setAttribute("required", "true");
-r2c1Rest.appendChild(terminos);
+r2c1Ped.appendChild(terminos);
 
 const labelTerminos = document.createElement("label");
 labelTerminos.setAttribute("for", "recoger");
 labelTerminos.textContent = "Acepto los términos y condiciones";
-r2c1Rest.appendChild(labelTerminos);
+r2c1Ped.appendChild(labelTerminos);
 
 //creacion de la seccion de acciones
 //boton de envio
