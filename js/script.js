@@ -231,16 +231,16 @@ labelRecoger.textContent = "Quiero recoger mi pedido en el restaurante";
 r2c1Rest.appendChild(labelRecoger);
 
 //div de la columna donde irá la segunda imagen
-const r2c2Opc = document.createElement("div");
-r2c2Opc.classList.add("fieldset-column");
-row1Opc.appendChild(r2c2Opc);
+const r2c2Rest = document.createElement("div");
+r2c2Rest.classList.add("fieldset-column");
+row1Rest.appendChild(r2c2Rest);
 //Nodo de la img
 const img2 = document.createElement("img");
 img2.setAttribute("alt", "pizzeria");
 img2.src="images/pizzeria.jpg";
 img2.width="300";
 //Vincular la img al div
-r2c2Opc.appendChild(img2); 
+r2c2Rest.appendChild(img2); 
 
 //creacion de la seccion de acciones
 //boton de envio
