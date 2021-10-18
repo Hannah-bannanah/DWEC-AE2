@@ -83,3 +83,17 @@ button:active {
 	background: white;
 	color:purple;
 }
+
+.validar:invalid {
+	background: #f8aaaa;
+	border: 1px solid #d60303;
+	outline:  1px solid #d60303;
+}
+
+input[type="checkbox"].validar:invalid {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width:1rem;
+	height: 1rem;
+}

@@ -1,6 +1,6 @@
 /**
  * Generacion de un formulario con javascript
-*/
+ */
 
 /*
 ===================================================== creacion de la estructura general del formulario ===================================================== 
@@ -34,7 +34,7 @@ fieldsetGeneral.appendChild(fieldsetOpciones);
 //fieldset del pedido
 const fieldsetPedido = document.createElement("fieldset");
 fieldsetPedido.classList.add("restaurante");
-fieldsetGeneral.appendChild(fieldsetPedido)
+fieldsetGeneral.appendChild(fieldsetPedido);
 
 //fieldset de los botones de Submit y Reset
 const fieldsetAcciones = document.createElement("fieldset");
@@ -64,12 +64,11 @@ const labelCheckbox = document.createElement("label");
 labelCheckbox.textContent = "Elige los ingredientes";
 r1c1Opc.appendChild(labelCheckbox);
 
-
-// Contenedor del 1er Checkbox 
+// Contenedor del 1er Checkbox
 const rowCbox1 = document.createElement("div");
 rowCbox1.classList.add("inline-column");
 r1c1Opc.appendChild(rowCbox1);
-// Nodos del 1er Checkbox 
+// Nodos del 1er Checkbox
 const inpCbox1 = document.createElement("input");
 inpCbox1.setAttribute("type", "checkbox");
 inpCbox1.setAttribute("id", "cbox1");
@@ -78,12 +77,12 @@ inpCbox1.setAttribute("value", "Quesos");
 const labelCbox1 = document.createElement("label");
 labelCbox1.setAttribute("id", "labelcbox1");
 labelCbox1.setAttribute("for", "inpCbox1");
-labelCbox1.textContent="Mezcla de quesos";
+labelCbox1.textContent = "Mezcla de quesos";
 //Vincular el checkbox y label al div
 rowCbox1.appendChild(inpCbox1);
-rowCbox1.appendChild(labelCbox1); 
+rowCbox1.appendChild(labelCbox1);
 
-// Contenedor del 2º Checkbox 
+// Contenedor del 2º Checkbox
 const rowCbox2 = document.createElement("div");
 rowCbox2.classList.add("inline-column");
 r1c1Opc.appendChild(rowCbox2);
@@ -96,12 +95,12 @@ inpCbox2.setAttribute("value", "Champiñones");
 const labelCbox2 = document.createElement("label");
 labelCbox2.setAttribute("id", "labelcbox2");
 labelCbox2.setAttribute("for", "inpCbox2");
-labelCbox2.textContent="Champiñones";
+labelCbox2.textContent = "Champiñones";
 //Vincular el checkbox y label al div
 rowCbox2.appendChild(inpCbox2);
-rowCbox2.appendChild(labelCbox2); 
+rowCbox2.appendChild(labelCbox2);
 
-// Contenedor del 3er Checkbox 
+// Contenedor del 3er Checkbox
 const rowCbox3 = document.createElement("div");
 rowCbox3.classList.add("inline-column");
 r1c1Opc.appendChild(rowCbox3);
@@ -114,12 +113,12 @@ inpCbox3.setAttribute("value", "Bacon");
 const labelCbox3 = document.createElement("label");
 labelCbox3.setAttribute("id", "labelcbox3");
 labelCbox3.setAttribute("for", "inpCbox3");
-labelCbox3.textContent="Bacon";
+labelCbox3.textContent = "Bacon";
 //Vincular el checkbox y label al div
 rowCbox3.appendChild(inpCbox3);
 rowCbox3.appendChild(labelCbox3);
 
-// Contenedor del 4º Checkbox 
+// Contenedor del 4º Checkbox
 const rowCbox4 = document.createElement("div");
 rowCbox4.classList.add("inline-column");
 r1c1Opc.appendChild(rowCbox4);
@@ -132,14 +131,13 @@ inpCbox4.setAttribute("value", "Aceitunas");
 const labelCbox4 = document.createElement("label");
 labelCbox4.setAttribute("id", "labelcbox4");
 labelCbox4.setAttribute("for", "inpCbox4");
-labelCbox4.textContent="Tomates cherry";
+labelCbox4.textContent = "Tomates cherry";
 //Vincular el checkbox y label al div
 r1c1Opc.appendChild(inpCbox4);
 r1c1Opc.appendChild(labelCbox4);
 //Vincular el checkbox y label al div
 rowCbox4.appendChild(inpCbox4);
 rowCbox4.appendChild(labelCbox4);
-
 
 // Contenedor del 5º Checkbox (inline)
 const rowCbox5 = document.createElement("div");
@@ -154,12 +152,10 @@ inpCbox5.setAttribute("value", "Pollo");
 const labelCbox5 = document.createElement("label");
 labelCbox5.setAttribute("id", "labelcbox5");
 labelCbox5.setAttribute("for", "cbox5");
-labelCbox5.textContent="Pollo";
+labelCbox5.textContent = "Pollo";
 //Vincular el checkbox y label al div
 rowCbox5.appendChild(inpCbox5);
 rowCbox5.appendChild(labelCbox5);
-
-
 
 // div de la columna donde irá una imagen
 const r1c2Opc = document.createElement("div");
@@ -168,15 +164,14 @@ row1Opc.appendChild(r1c2Opc);
 //Nodo de la img
 const img1 = document.createElement("img");
 img1.setAttribute("alt", "pizza1");
-img1.src="images/pizza1.jpg";
-img1.width="200";
+img1.src = "images/pizza1.jpg";
+img1.width = "200";
 //Vincular la img al div
 r1c2Opc.appendChild(img1);
 
-
 /*
 ===================================================== creacion de la seccion Pedido ===================================================== 
-*/ 
+*/
 
 //leyenda
 const leyendaRestaurante = document.createElement("legend");
@@ -206,22 +201,27 @@ selectRestaurante.setAttribute("required", "true");
 r1c1Rest.appendChild(selectRestaurante);
 
 //opciones del select
+const placeholder = document.createElement("option");
+placeholder.setAttribute("value", "");
+placeholder.textContent = "Elige un restaurante";
+
 const opcionA = document.createElement("option");
-opcionA.setAttribute("value","res1");
+opcionA.setAttribute("value", "res1");
 opcionA.textContent = "La casina de Paulina";
 
 const opcionB = document.createElement("option");
-opcionB.setAttribute("value","res2");
+opcionB.setAttribute("value", "res2");
 opcionB.textContent = "Ixchel's Hollywok";
 
 const opcionC = document.createElement("option");
-opcionC.setAttribute("value","res3");
-opcionC.textContent = "PizzalPilpil";
+opcionC.setAttribute("value", "res3");
+opcionC.textContent = "PizzalPilpilar";
 
 const opcionD = document.createElement("option");
-opcionD.setAttribute("value","res4");
+opcionD.setAttribute("value", "res4");
 opcionD.textContent = "La Pizza Pagana de Jana";
 
+selectRestaurante.appendChild(placeholder);
 selectRestaurante.appendChild(opcionA);
 selectRestaurante.appendChild(opcionB);
 selectRestaurante.appendChild(opcionC);
@@ -234,10 +234,10 @@ row1Rest.appendChild(r2c2Rest);
 //Nodo de la img
 const img2 = document.createElement("img");
 img2.setAttribute("alt", "pizzeria");
-img2.src="images/pizzeria.jpg";
-img2.width="300";
+img2.src = "images/pizzeria.jpg";
+img2.width = "300";
 //Vincular la img al div
-r2c2Rest.appendChild(img2); 
+r2c2Rest.appendChild(img2);
 
 //segunda fila (div para formato)
 const row2Rest = document.createElement("div");
@@ -283,4 +283,10 @@ fieldsetAcciones.appendChild(reset);
 
 /*
 ===================================================== validación del formulario ===================================================== 
-*/ 
+*/
+submit.addEventListener("click", () => {
+  const elementosObligatorios = document.querySelectorAll("[required]")
+  for (let elemento of elementosObligatorios) {
+    elemento.classList.add("validar");
+  }
+});
