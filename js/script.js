@@ -268,6 +268,97 @@ labelRbMasa4.textContent="Extra con queso";
 rowRb4.appendChild(inpRb4);
 rowRb4.appendChild(labelRbMasa4);
 
+/*--------------------------
+--------Radio Button 2------
+---------------------------*/
+
+//Div de la 1ª fila de los tamaños de pizza
+const row3Opc = document.createElement("div");
+row3Opc.classList.add("fieldset-row");
+fieldsetOpciones.appendChild(row3Opc);
+
+//Div de la columna donde irán los tipos de masa
+const r3c1Opc = document.createElement("div");
+r3c1Opc.classList.add("fieldset-column");
+row3Opc.appendChild(r3c1Opc);
+
+//Nodos de la etiqueta label (masa)
+const labelRbTam = document.createElement("label");
+labelRbTam.textContent = "Elige el tamaño";
+r3c1Opc.appendChild(labelRbTam);
+
+
+//Contenedor del 1er Radio Button 
+const rowRb5 = document.createElement("div");
+rowRb5.classList.add("inline-column");
+r3c1Opc.appendChild(rowRb5);
+//Nodos 
+const inpRb5 = document.createElement("input");
+inpRb5.setAttribute("type", "radio");
+inpRb5.setAttribute("id", "rb5");
+inpRb5.setAttribute("value", "pequeña");
+//Etiqueta label
+const labelRbTam5 = document.createElement("label");
+labelRbTam5.setAttribute("id", "labelrb5");
+labelRbTam5.setAttribute("for", "inpRb5");
+labelRbTam5.textContent="Pequeña";
+//Vincular el radio button y label al div
+rowRb5.appendChild(inpRb5);
+rowRb5.appendChild(labelRbTam5); 
+
+//Contenedor del 2º Radio Button 
+const rowRb6 = document.createElement("div");
+rowRb6.classList.add("inline-column");
+r3c1Opc.appendChild(rowRb6);
+//Nodos 
+const inpRb6 = document.createElement("input");
+inpRb6.setAttribute("type", "radio");
+inpRb6.setAttribute("id", "rb6");
+inpRb6.setAttribute("value", "mediana");
+//Etiqueta label
+const labelRbTam6 = document.createElement("label");
+labelRbTam6.setAttribute("id", "labelrb6");
+labelRbTam6.setAttribute("for", "inpRb6");
+labelRbTam6.textContent="Mediana";
+//Vincular el radio button y label al div
+rowRb6.appendChild(inpRb6);
+rowRb6.appendChild(labelRbTam6); 
+
+//Contenedor del 3er Radio Button 
+const rowRb7 = document.createElement("div");
+rowRb7.classList.add("inline-column");
+r3c1Opc.appendChild(rowRb7);
+//Nodos 
+const inpRb7 = document.createElement("input");
+inpRb7.setAttribute("type", "radio");
+inpRb7.setAttribute("id", "rb7");
+inpRb7.setAttribute("value", "familiar");
+//Etiqueta label
+const labelRbTam7 = document.createElement("label");
+labelRbTam7.setAttribute("id", "labelrb7");
+labelRbTam7.setAttribute("for", "inpRb7");
+labelRbTam7.textContent="Familiar";
+//Vincular el radio button y label al div
+rowRb7.appendChild(inpRb7);
+rowRb7.appendChild(labelRbTam7);
+
+//Contenedor del 4º Radio Button 
+const rowRb8 = document.createElement("div");
+rowRb8.classList.add("inline-column");
+r3c1Opc.appendChild(rowRb8);
+//Nodos 
+const inpRb8 = document.createElement("input");
+inpRb8.setAttribute("type", "radio");
+inpRb8.setAttribute("id", "rb8");
+inpRb8.setAttribute("value", "dinosaurica");
+//Etiqueta label
+const labelRbTam8 = document.createElement("label");
+labelRbTam8.setAttribute("id", "labelrb8");
+labelRbTam8.setAttribute("for", "inpRb8");
+labelRbTam8.textContent="Dinosáurica";
+//Vincular el radio button y label al div
+rowRb8.appendChild(inpRb8);
+rowRb8.appendChild(labelRbTam8);
 
 //creacion de la seccion Restaurante 
 //leyenda
