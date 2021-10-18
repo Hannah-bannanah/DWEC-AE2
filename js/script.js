@@ -204,6 +204,7 @@ r2c1Opc.appendChild(rowRb1);
 const inpRb1 = document.createElement("input");
 inpRb1.setAttribute("type", "radio");
 inpRb1.setAttribute("id", "rb1");
+inpRb1.setAttribute("name", "rbmasa");
 inpRb1.setAttribute("value", "fina");
 //Etiqueta label
 const labelRbMasa1 = document.createElement("label");
@@ -222,6 +223,7 @@ r2c1Opc.appendChild(rowRb2);
 const inpRb2 = document.createElement("input");
 inpRb2.setAttribute("type", "radio");
 inpRb2.setAttribute("id", "rb2");
+inpRb2.setAttribute("name", "rbmasa");
 inpRb2.setAttribute("value", "normal");
 //Etiqueta label
 const labelRbMasa2 = document.createElement("label");
@@ -240,6 +242,7 @@ r2c1Opc.appendChild(rowRb3);
 const inpRb3 = document.createElement("input");
 inpRb3.setAttribute("type", "radio");
 inpRb3.setAttribute("id", "rb3");
+inpRb3.setAttribute("name", "rbmasa");
 inpRb3.setAttribute("value", "extra");
 //Etiqueta label
 const labelRbMasa3 = document.createElement("label");
@@ -258,6 +261,7 @@ r2c1Opc.appendChild(rowRb4);
 const inpRb4 = document.createElement("input");
 inpRb4.setAttribute("type", "radio");
 inpRb4.setAttribute("id", "rb4");
+inpRb4.setAttribute("name", "rbmasa");
 inpRb4.setAttribute("value", "extraqueso");
 //Etiqueta label
 const labelRbMasa4 = document.createElement("label");
@@ -296,6 +300,7 @@ r3c1Opc.appendChild(rowRb5);
 const inpRb5 = document.createElement("input");
 inpRb5.setAttribute("type", "radio");
 inpRb5.setAttribute("id", "rb5");
+inpRb5.setAttribute("name", "rbtam");
 inpRb5.setAttribute("value", "pequeña");
 //Etiqueta label
 const labelRbTam5 = document.createElement("label");
@@ -314,6 +319,7 @@ r3c1Opc.appendChild(rowRb6);
 const inpRb6 = document.createElement("input");
 inpRb6.setAttribute("type", "radio");
 inpRb6.setAttribute("id", "rb6");
+inpRb6.setAttribute("name", "rbtam");
 inpRb6.setAttribute("value", "mediana");
 //Etiqueta label
 const labelRbTam6 = document.createElement("label");
@@ -332,6 +338,7 @@ r3c1Opc.appendChild(rowRb7);
 const inpRb7 = document.createElement("input");
 inpRb7.setAttribute("type", "radio");
 inpRb7.setAttribute("id", "rb7");
+inpRb7.setAttribute("name", "rbtam");
 inpRb7.setAttribute("value", "familiar");
 //Etiqueta label
 const labelRbTam7 = document.createElement("label");
@@ -350,6 +357,7 @@ r3c1Opc.appendChild(rowRb8);
 const inpRb8 = document.createElement("input");
 inpRb8.setAttribute("type", "radio");
 inpRb8.setAttribute("id", "rb8");
+inpRb8.setAttribute("name", "rbtam");
 inpRb8.setAttribute("value", "dinosaurica");
 //Etiqueta label
 const labelRbTam8 = document.createElement("label");
