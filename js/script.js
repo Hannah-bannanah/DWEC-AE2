@@ -44,8 +44,75 @@ fieldsetGeneral.appendChild(fieldsetAcciones);
 /*
 ===================================================== creacion de la seccion contacto ===================================================== 
 */
-//TODO
 
+const leyendaContacto = document.createElement("legend");
+leyendaContacto.textContent = "Tus datos de contacto";
+fieldsetContacto.appendChild(leyendaContacto);
+
+// div de la 1ª fila
+const row1Con = document.createElement("div");
+row1Con.classList.add("fieldset-row");
+fieldsetContacto.appendChild(row1Con);
+
+// div de la 1ª columna
+const r1c1Con = document.createElement("div");
+r1c1Con.classList.add("fieldset-column");
+row1Con.appendChild(r1c1Con);
+
+// Label de la 1ª caja de texto
+const labelContacto = document.createElement("label");
+labelContacto.textContent = "Introduce tus datos";
+r1c1Con.appendChild(labelContacto);
+
+//Contenedor de la primera caja de texto
+const rowCon1 = document.createElement("div");
+rowCon1.classList.add("inline-column");
+r1c1Con.appendChild(rowCon1);
+
+//
+const labelCon1 = document.createElement("label");
+labelCon1.setAttribute("id", "labelConText1");
+labelCon1.setAttribute("for", "inpCon1");
+labelCon1.textContent = "Nombre";
+
+const inpCon1 = document.createElement("input");
+inpCon1.setAttribute("type", "Text");
+inpCon1.setAttribute("id", "ConText1");
+inpCon1.setAttribute("value", "Nombre");
+
+rowCon1.appendChild(labelCon1);
+rowCon1.appendChild(inpCon1);
+
+
+// div de la 2ª columna
+
+const r2c2Con = document.createElement("div");
+r2c2Con.classList.add("fieldset-column");
+row1Con.appendChild(r2c2Con);
+
+// Label de la 1ª caja de texto
+const labelContacto1 = document.createElement("label");
+labelContacto1.textContent = "  .   ";
+r2c2Con.appendChild(labelContacto1);
+
+//Contenedor de la segunda caja de texto
+const rowCon2 = document.createElement("div");
+rowCon2.classList.add("inline-column");
+r2c2Con.appendChild(rowCon2);
+
+//
+const labelCon2 = document.createElement("label");
+labelCon2.setAttribute("id", "labelConText2");
+labelCon2.setAttribute("for", "inpCon1");
+labelCon2.textContent = "Apellidos";
+
+const inpCon2 = document.createElement("input");
+inpCon2.setAttribute("type", "Text");
+inpCon2.setAttribute("id", "ConText1");
+inpCon2.setAttribute("value", "Apellidos");
+
+rowCon2.appendChild(labelCon2);
+rowCon2.appendChild(inpCon2);
 /*
 ===================================================== creacion de la seccion Opciones-pizza ===================================================== 
 */
