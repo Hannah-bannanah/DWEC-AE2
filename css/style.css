@@ -50,7 +50,8 @@ fieldset legend {
 }
 
 input, 
-select {
+select,
+label {
 	cursor: pointer;
 }
 

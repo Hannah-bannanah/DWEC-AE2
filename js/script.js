@@ -532,14 +532,14 @@ row2Ped.appendChild(r2c1Ped);
 //checkbox terminos y condiciones
 const terminos = document.createElement("input");
 terminos.setAttribute("type", "checkbox");
-terminos.setAttribute("name", "recoger");
-terminos.setAttribute("id", "recoger");
+terminos.setAttribute("name", "terminos");
+terminos.setAttribute("id", "terminos");
 terminos.setAttribute("value", "s");
 terminos.setAttribute("required", "true");
 r2c1Ped.appendChild(terminos);
 
 const labelTerminos = document.createElement("label");
-labelTerminos.setAttribute("for", "recoger");
+labelTerminos.setAttribute("for", "terminos");
 labelTerminos.textContent = "Acepto los términos y condiciones";
 r2c1Ped.appendChild(labelTerminos);
 
