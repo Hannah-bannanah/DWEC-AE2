@@ -51,7 +51,7 @@ fieldset legend {
 
 input, 
 select,
-label {
+input + label {
 	cursor: pointer;
 }
 
