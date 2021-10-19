@@ -292,6 +292,7 @@ inpRb2.setAttribute("type", "radio");
 inpRb2.setAttribute("id", "rb2");
 inpRb2.setAttribute("name", "rbmasa");
 inpRb2.setAttribute("value", "normal");
+inpRb2.setAttribute("required", "true");
 //Etiqueta label
 const labelRbMasa2 = document.createElement("label");
 labelRbMasa2.setAttribute("id", "labelrb2");
@@ -311,6 +312,7 @@ inpRb3.setAttribute("type", "radio");
 inpRb3.setAttribute("id", "rb3");
 inpRb3.setAttribute("name", "rbmasa");
 inpRb3.setAttribute("value", "extra");
+inpRb3.setAttribute("required", "true");
 //Etiqueta label
 const labelRbMasa3 = document.createElement("label");
 labelRbMasa3.setAttribute("id", "labelrb3");
@@ -330,6 +332,7 @@ inpRb4.setAttribute("type", "radio");
 inpRb4.setAttribute("id", "rb4");
 inpRb4.setAttribute("name", "rbmasa");
 inpRb4.setAttribute("value", "extraqueso");
+inpRb4.setAttribute("required", "true");
 //Etiqueta label
 const labelRbMasa4 = document.createElement("label");
 labelRbMasa4.setAttribute("id", "labelrb4");
@@ -390,6 +393,7 @@ inpRb6.setAttribute("type", "radio");
 inpRb6.setAttribute("id", "rb6");
 inpRb6.setAttribute("name", "rbtam");
 inpRb6.setAttribute("value", "mediana");
+inpRb6.setAttribute("required", "true");
 //Etiqueta label
 const labelRbTam6 = document.createElement("label");
 labelRbTam6.setAttribute("id", "labelrb6");
@@ -409,6 +413,7 @@ inpRb7.setAttribute("type", "radio");
 inpRb7.setAttribute("id", "rb7");
 inpRb7.setAttribute("name", "rbtam");
 inpRb7.setAttribute("value", "familiar");
+inpRb7.setAttribute("required", "true");
 //Etiqueta label
 const labelRbTam7 = document.createElement("label");
 labelRbTam7.setAttribute("id", "labelrb7");
@@ -428,6 +433,7 @@ inpRb8.setAttribute("type", "radio");
 inpRb8.setAttribute("id", "rb8");
 inpRb8.setAttribute("name", "rbtam");
 inpRb8.setAttribute("value", "dinosaurica");
+inpRb8.setAttribute("required", "true");
 //Etiqueta label
 const labelRbTam8 = document.createElement("label");
 labelRbTam8.setAttribute("id", "labelrb8");
