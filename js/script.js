@@ -541,29 +541,20 @@ selectRestaurante.appendChild(opcionB);
 selectRestaurante.appendChild(opcionC);
 selectRestaurante.appendChild(opcionD);
 
-//textarea -TODO
-
-
-const rowText = document.createElement("div");
-rowText.classList.add("fieldset-row");
-fieldsetPedido.appendChild(rowText);
+// textarea comentarios
 
 const labelText = document.createElement("label");
-labelText.setAttribute("for", "restaurante");
+labelText.setAttribute("for", "textArea");
 labelText.textContent = "Introduce aquí información sobre alergias u otras notas adicionales: ";
-rowText.appendChild(labelText);
-
-const rowText1 = document.createElement("div");
-rowText1.classList.add("fieldset-row");
-fieldsetPedido.appendChild(rowText1);
+r1c1Ped.appendChild(labelText);
 
 const inpText = document.createElement("textarea");
-inpText.setAttribute("id", "TextArea");
-inpText.setAttribute("cols", 10);
+inpText.setAttribute("id", "textArea");
+inpText.setAttribute("cols", 40);
 inpText.setAttribute("rows", 4)
 inpText.setAttribute("placeholder", "Escribe aquí");
 
-rowText1.appendChild(inpText);
+r1c1Ped.appendChild(inpText);
 
 //div de la columna donde irá la segunda imagen
 const r2c2Ped = document.createElement("div");
