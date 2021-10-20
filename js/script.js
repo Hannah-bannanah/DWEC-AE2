@@ -18,27 +18,27 @@ form.appendChild(fieldsetGeneral);
 
 const leyendaFormulario = document.createElement("legend");
 leyendaFormulario.textContent = "Realizar Pedido";
-leyendaFormulario.classList.add("form-title");
+leyendaFormulario.classList.add("form__titulo");
 fieldsetGeneral.appendChild(leyendaFormulario);
 
 //fieldset de Contacto
 const fieldsetContacto = document.createElement("fieldset");
-fieldsetContacto.classList.add("contacto");
+fieldsetContacto.setAttribute("id", "contacto");
 fieldsetGeneral.appendChild(fieldsetContacto);
 
 //fieldset de Opciones
 const fieldsetOpciones = document.createElement("fieldset");
-fieldsetOpciones.classList.add("opciones-pizza");
+fieldsetOpciones.setAttribute("id", "opciones-pizza");
 fieldsetGeneral.appendChild(fieldsetOpciones);
 
 //fieldset del pedido
 const fieldsetPedido = document.createElement("fieldset");
-fieldsetPedido.classList.add("restaurante");
+fieldsetPedido.setAttribute("id", "restaurante");
 fieldsetGeneral.appendChild(fieldsetPedido);
 
 //fieldset de los botones de Submit y Reset
 const fieldsetAcciones = document.createElement("fieldset");
-fieldsetAcciones.classList.add("form__actions");
+fieldsetAcciones.setAttribute("id", "acciones");
 fieldsetGeneral.appendChild(fieldsetAcciones);
 
 /*
@@ -602,7 +602,9 @@ labelTerminos.setAttribute("for", "terminos");
 labelTerminos.textContent = "Acepto los términos y condiciones";
 r2c1Ped.appendChild(labelTerminos);
 
-//creacion de la seccion de acciones
+/*
+===================================================== validación del formulario ===================================================== 
+*/
 //boton de envio
 const submit = document.createElement("button");
 submit.setAttribute("type", "submit");
@@ -612,6 +614,7 @@ submit.textContent = "Realizar Pedido";
 submit.classList.add("cta");
 fieldsetAcciones.appendChild(submit);
 
+//boton de reseteo
 const reset = document.createElement("button");
 reset.setAttribute("type", "reset");
 reset.setAttribute("name", "reset");
