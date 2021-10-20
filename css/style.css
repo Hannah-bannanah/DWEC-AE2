@@ -23,7 +23,7 @@ form fieldset:first-child {
 	border: 2px solid purple;
 }
 
-.form-title {
+.form__titulo {
 	color:purple;
 	font-size: 1.2rem;
 }
@@ -55,7 +55,7 @@ input + label {
 	cursor: pointer;
 }
 
-.form__actions {
+#acciones {
   display: flex;
   justify-content: space-evenly;
 }
