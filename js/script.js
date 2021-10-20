@@ -276,7 +276,7 @@ inpRb1.setAttribute("required", "true");
 //Etiqueta label
 const labelRbMasa1 = document.createElement("label");
 labelRbMasa1.setAttribute("id", "labelrb1");
-labelRbMasa1.setAttribute("for", "inpRb1");
+labelRbMasa1.setAttribute("for", "rb1");
 labelRbMasa1.textContent="Fina";
 //Vincular el radio button y label al div
 rowRb1.appendChild(inpRb1);
@@ -296,7 +296,7 @@ inpRb2.setAttribute("required", "true");
 //Etiqueta label
 const labelRbMasa2 = document.createElement("label");
 labelRbMasa2.setAttribute("id", "labelrb2");
-labelRbMasa2.setAttribute("for", "inpRb2");
+labelRbMasa2.setAttribute("for", "rb2");
 labelRbMasa2.textContent="Normal";
 //Vincular el radio button y label al div
 rowRb2.appendChild(inpRb2);
@@ -316,7 +316,7 @@ inpRb3.setAttribute("required", "true");
 //Etiqueta label
 const labelRbMasa3 = document.createElement("label");
 labelRbMasa3.setAttribute("id", "labelrb3");
-labelRbMasa3.setAttribute("for", "inpRb3");
+labelRbMasa3.setAttribute("for", "rb3");
 labelRbMasa3.textContent="Extra";
 //Vincular el radio button y label al div
 rowRb3.appendChild(inpRb3);
@@ -336,7 +336,7 @@ inpRb4.setAttribute("required", "true");
 //Etiqueta label
 const labelRbMasa4 = document.createElement("label");
 labelRbMasa4.setAttribute("id", "labelrb4");
-labelRbMasa4.setAttribute("for", "inpRb4");
+labelRbMasa4.setAttribute("for", "rb4");
 labelRbMasa4.textContent="Extra con queso";
 //Vincular el radio button y label al div
 rowRb4.appendChild(inpRb4);
@@ -377,7 +377,7 @@ inpRb5.setAttribute("required", "true");
 //Etiqueta label
 const labelRbTam5 = document.createElement("label");
 labelRbTam5.setAttribute("id", "labelrb5");
-labelRbTam5.setAttribute("for", "inpRb5");
+labelRbTam5.setAttribute("for", "rb5");
 labelRbTam5.textContent="Pequeña";
 //Vincular el radio button y label al div
 rowRb5.appendChild(inpRb5);
@@ -397,7 +397,7 @@ inpRb6.setAttribute("required", "true");
 //Etiqueta label
 const labelRbTam6 = document.createElement("label");
 labelRbTam6.setAttribute("id", "labelrb6");
-labelRbTam6.setAttribute("for", "inpRb6");
+labelRbTam6.setAttribute("for", "rb6");
 labelRbTam6.textContent="Mediana";
 //Vincular el radio button y label al div
 rowRb6.appendChild(inpRb6);
@@ -417,7 +417,7 @@ inpRb7.setAttribute("required", "true");
 //Etiqueta label
 const labelRbTam7 = document.createElement("label");
 labelRbTam7.setAttribute("id", "labelrb7");
-labelRbTam7.setAttribute("for", "inpRb7");
+labelRbTam7.setAttribute("for", "rb7");
 labelRbTam7.textContent="Familiar";
 //Vincular el radio button y label al div
 rowRb7.appendChild(inpRb7);
@@ -437,7 +437,7 @@ inpRb8.setAttribute("required", "true");
 //Etiqueta label
 const labelRbTam8 = document.createElement("label");
 labelRbTam8.setAttribute("id", "labelrb8");
-labelRbTam8.setAttribute("for", "inpRb8");
+labelRbTam8.setAttribute("for", "rb8");
 labelRbTam8.textContent="Dinosáurica";
 //Vincular el radio button y label al div
 rowRb8.appendChild(inpRb8);
