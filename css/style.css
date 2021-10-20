@@ -55,6 +55,10 @@ input + label {
 	cursor: pointer;
 }
 
+label[for="textArea"] {
+	margin-top: 1rem
+}
+
 #acciones {
   display: flex;
   justify-content: space-evenly;
