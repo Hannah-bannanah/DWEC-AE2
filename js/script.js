@@ -311,7 +311,7 @@ inpRb1.setAttribute("type", "radio");
 inpRb1.setAttribute("id", "rb1");
 inpRb1.setAttribute("name", "rbmasa");
 inpRb1.setAttribute("value", "fina");
-inpRb1.setAttribute("required", "true");
+inpRb1.setAttribute("required", "required");
 //Etiqueta label
 const labelRbMasa1 = document.createElement("label");
 labelRbMasa1.setAttribute("id", "labelrb1");
@@ -331,7 +331,7 @@ inpRb2.setAttribute("type", "radio");
 inpRb2.setAttribute("id", "rb2");
 inpRb2.setAttribute("name", "rbmasa");
 inpRb2.setAttribute("value", "normal");
-inpRb2.setAttribute("required", "true");
+inpRb2.setAttribute("required", "required");
 //Etiqueta label
 const labelRbMasa2 = document.createElement("label");
 labelRbMasa2.setAttribute("id", "labelrb2");
@@ -351,7 +351,7 @@ inpRb3.setAttribute("type", "radio");
 inpRb3.setAttribute("id", "rb3");
 inpRb3.setAttribute("name", "rbmasa");
 inpRb3.setAttribute("value", "extra");
-inpRb3.setAttribute("required", "true");
+inpRb3.setAttribute("required", "required");
 //Etiqueta label
 const labelRbMasa3 = document.createElement("label");
 labelRbMasa3.setAttribute("id", "labelrb3");
@@ -371,7 +371,7 @@ inpRb4.setAttribute("type", "radio");
 inpRb4.setAttribute("id", "rb4");
 inpRb4.setAttribute("name", "rbmasa");
 inpRb4.setAttribute("value", "extraqueso");
-inpRb4.setAttribute("required", "true");
+inpRb4.setAttribute("required", "required");
 //Etiqueta label
 const labelRbMasa4 = document.createElement("label");
 labelRbMasa4.setAttribute("id", "labelrb4");
@@ -411,7 +411,7 @@ inpRb5.setAttribute("type", "radio");
 inpRb5.setAttribute("id", "rb5");
 inpRb5.setAttribute("name", "rbtam");
 inpRb5.setAttribute("value", "pequeña");
-inpRb5.setAttribute("required", "true");
+inpRb5.setAttribute("required", "required");
 
 //Etiqueta label
 const labelRbTam5 = document.createElement("label");
@@ -432,7 +432,7 @@ inpRb6.setAttribute("type", "radio");
 inpRb6.setAttribute("id", "rb6");
 inpRb6.setAttribute("name", "rbtam");
 inpRb6.setAttribute("value", "mediana");
-inpRb6.setAttribute("required", "true");
+inpRb6.setAttribute("required", "required");
 //Etiqueta label
 const labelRbTam6 = document.createElement("label");
 labelRbTam6.setAttribute("id", "labelrb6");
@@ -452,7 +452,7 @@ inpRb7.setAttribute("type", "radio");
 inpRb7.setAttribute("id", "rb7");
 inpRb7.setAttribute("name", "rbtam");
 inpRb7.setAttribute("value", "familiar");
-inpRb7.setAttribute("required", "true");
+inpRb7.setAttribute("required", "required");
 //Etiqueta label
 const labelRbTam7 = document.createElement("label");
 labelRbTam7.setAttribute("id", "labelrb7");
@@ -472,7 +472,7 @@ inpRb8.setAttribute("type", "radio");
 inpRb8.setAttribute("id", "rb8");
 inpRb8.setAttribute("name", "rbtam");
 inpRb8.setAttribute("value", "dinosaurica");
-inpRb8.setAttribute("required", "true");
+inpRb8.setAttribute("required", "required");
 //Etiqueta label
 const labelRbTam8 = document.createElement("label");
 labelRbTam8.setAttribute("id", "labelrb8");
@@ -511,7 +511,7 @@ r1c1Ped.appendChild(labelSelect);
 const selectRestaurante = document.createElement("select");
 selectRestaurante.setAttribute("name", "restaurante");
 selectRestaurante.setAttribute("id", "restaurante");
-selectRestaurante.setAttribute("required", "true");
+selectRestaurante.setAttribute("required", "required");
 r1c1Ped.appendChild(selectRestaurante);
 
 //opciones del select
@@ -585,7 +585,7 @@ terminos.setAttribute("type", "checkbox");
 terminos.setAttribute("name", "terminos");
 terminos.setAttribute("id", "terminos");
 terminos.setAttribute("value", "s");
-terminos.setAttribute("required", "true");
+terminos.setAttribute("required", "required");
 r2c1Ped.appendChild(terminos);
 
 const labelTerminos = document.createElement("label");
