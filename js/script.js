@@ -59,9 +59,9 @@ const r1c1Con = document.createElement("div");
 r1c1Con.classList.add("fieldset-column");
 row1Con.appendChild(r1c1Con);
 
-// Label de la 1ª caja de texto
+// Label de la columna
 const labelContacto = document.createElement("label");
-labelContacto.textContent = "Introduce tus datos";
+labelContacto.textContent = "Introduce tus datos:";
 r1c1Con.appendChild(labelContacto);
 
 //Contenedor de la primera caja de texto
@@ -69,16 +69,18 @@ const rowCon1 = document.createElement("div");
 rowCon1.classList.add("inline-column");
 r1c1Con.appendChild(rowCon1);
 
-//
+// Label de la 1º caja de texto
 const labelCon1 = document.createElement("label");
-labelCon1.setAttribute("id", "labelConText1");
-labelCon1.setAttribute("for", "ConText1");
+labelCon1.setAttribute("id", "labelCon1");
+labelCon1.setAttribute("for", "inpCon1");
 labelCon1.textContent = "Nombre ";
 
+// Input de la 1º caja de texto
 const inpCon1 = document.createElement("input");
 inpCon1.setAttribute("type", "Text");
 inpCon1.setAttribute("id", "ConText1");
 inpCon1.setAttribute("placeholder", "Nombre");
+inpCon1.setAttribute("required", "true");
 
 rowCon1.appendChild(labelCon1);
 rowCon1.appendChild(inpCon1);
@@ -88,46 +90,47 @@ const rowCon3 = document.createElement("div");
 rowCon3.classList.add("inline-column");
 r1c1Con.appendChild(rowCon3);
 
-//
+// Label de la 3º caja de texto
 const labelCon3 = document.createElement("label");
-labelCon3.setAttribute("id", "labelConText1");
-labelCon3.setAttribute("for", "ConText3");
-labelCon3.textContent = "Dirección ";
+labelCon3.setAttribute("id", "labelCon3");
+labelCon3.setAttribute("for", "inpCon3");
+labelCon3.textContent = "Apellidos ";
 
+
+// Input de la 3º caja de texto
 const inpCon3 = document.createElement("input");
 inpCon3.setAttribute("type", "Text");
 inpCon3.setAttribute("id", "ConText3");
-inpCon3.setAttribute("placeholder", "Dirección");
+inpCon3.setAttribute("placeholder", "Apellidos");
+inpCon3.setAttribute("required", "true");
 
 rowCon3.appendChild(labelCon3);
 rowCon3.appendChild(inpCon3);
 
 // div de la 2ª columna
-
 const r2c2Con = document.createElement("div");
 r2c2Con.classList.add("fieldset-column");
 row1Con.appendChild(r2c2Con);
 
-// Label de la 1ª caja de texto
-const labelContacto1 = document.createElement("label");
-labelContacto1.textContent = "  .   ";
-r2c2Con.appendChild(labelContacto1);
 
 //Contenedor de la segunda caja de texto
 const rowCon2 = document.createElement("div");
 rowCon2.classList.add("inline-column");
 r2c2Con.appendChild(rowCon2);
 
-//
+// Label de la 2º caja de texto
 const labelCon2 = document.createElement("label");
-labelCon2.setAttribute("id", "labelConText2");
-labelCon2.setAttribute("for", "ConText2");
-labelCon2.textContent = "Apellidos ";
 
+labelCon2.setAttribute("id", "labelCon2");
+labelCon2.setAttribute("for", "inpCon2");
+labelCon2.textContent = "Dirección   ";
+
+// Input de la 2º caja de texto
 const inpCon2 = document.createElement("input");
 inpCon2.setAttribute("type", "Text");
 inpCon2.setAttribute("id", "ConText2");
-inpCon2.setAttribute("placeholder", "Apellidos");
+inpCon2.setAttribute("placeholder", "Dirección");
+inpCon2.setAttribute("required", "true");
 
 rowCon2.appendChild(labelCon2);
 rowCon2.appendChild(inpCon2);
@@ -137,20 +140,43 @@ const rowCon4 = document.createElement("div");
 rowCon4.classList.add("inline-column");
 r2c2Con.appendChild(rowCon4);
 
-//
+// Label de la 4º caja de texto
 const labelCon4 = document.createElement("label");
-labelCon4.setAttribute("id", "labelConText1");
-labelCon4.setAttribute("for", "ConText4");
+
+labelCon4.setAttribute("id", "labelCon4");
+labelCon4.setAttribute("for", "inpCon4");
 labelCon4.textContent = "Teléfono ";
 
+// Input de la 4º caja de texto
 const inpCon4 = document.createElement("input");
 inpCon4.setAttribute("type", "Text");
 inpCon4.setAttribute("id", "ConText4");
 inpCon4.setAttribute("placeholder", "Telefono");
+inpCon4.setAttribute("required", "true");
 
 rowCon4.appendChild(labelCon4);
 rowCon4.appendChild(inpCon4);
 
+////Contenedor de la sexta caja de texto
+const rowCon6 = document.createElement("div");
+rowCon6.classList.add("inline-column");
+r2c2Con.appendChild(rowCon6);
+
+//// Label de la 6º caja de texto
+const labelCon6 = document.createElement("label");
+labelCon6.setAttribute("id", "labelCon6");
+labelCon6.setAttribute("for", "inpCon6");
+labelCon6.textContent = "DNI ";
+
+// Input de la 6º caja de texto
+const inpCon6 = document.createElement("input");
+inpCon6.setAttribute("type", "Text");
+inpCon6.setAttribute("id", "ConText6");
+inpCon6.setAttribute("placeholder", "DNI");
+inpCon6.setAttribute("required", "true");
+
+rowCon6.appendChild(labelCon6);
+rowCon6.appendChild(inpCon6);
 
 /*
 ===================================================== creacion de la seccion Opciones-pizza ===================================================== 
@@ -332,6 +358,7 @@ inpRb2.setAttribute("id", "rb2");
 inpRb2.setAttribute("name", "rbmasa");
 inpRb2.setAttribute("value", "normal");
 inpRb2.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbMasa2 = document.createElement("label");
 labelRbMasa2.setAttribute("id", "labelrb2");
@@ -352,6 +379,7 @@ inpRb3.setAttribute("id", "rb3");
 inpRb3.setAttribute("name", "rbmasa");
 inpRb3.setAttribute("value", "extra");
 inpRb3.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbMasa3 = document.createElement("label");
 labelRbMasa3.setAttribute("id", "labelrb3");
@@ -372,6 +400,7 @@ inpRb4.setAttribute("id", "rb4");
 inpRb4.setAttribute("name", "rbmasa");
 inpRb4.setAttribute("value", "extraqueso");
 inpRb4.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbMasa4 = document.createElement("label");
 labelRbMasa4.setAttribute("id", "labelrb4");
@@ -433,6 +462,7 @@ inpRb6.setAttribute("id", "rb6");
 inpRb6.setAttribute("name", "rbtam");
 inpRb6.setAttribute("value", "mediana");
 inpRb6.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbTam6 = document.createElement("label");
 labelRbTam6.setAttribute("id", "labelrb6");
@@ -453,6 +483,7 @@ inpRb7.setAttribute("id", "rb7");
 inpRb7.setAttribute("name", "rbtam");
 inpRb7.setAttribute("value", "familiar");
 inpRb7.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbTam7 = document.createElement("label");
 labelRbTam7.setAttribute("id", "labelrb7");
@@ -472,7 +503,9 @@ inpRb8.setAttribute("type", "radio");
 inpRb8.setAttribute("id", "rb8");
 inpRb8.setAttribute("name", "rbtam");
 inpRb8.setAttribute("value", "dinosaurica");
+
 inpRb8.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbTam8 = document.createElement("label");
 labelRbTam8.setAttribute("id", "labelrb8");
@@ -541,20 +574,36 @@ selectRestaurante.appendChild(opcionB);
 selectRestaurante.appendChild(opcionC);
 selectRestaurante.appendChild(opcionD);
 
-// textarea comentarios
 
+//Sección del textarea
+
+//Creación de la fila para el label
+const rowText = document.createElement("div");
+rowText.classList.add("fieldset-row");
+fieldsetPedido.appendChild(rowText);
+
+
+//Label del textarea
 const labelText = document.createElement("label");
 labelText.setAttribute("for", "textArea");
 labelText.textContent = "Introduce aquí información sobre alergias u otras notas adicionales: ";
+
+//Creación de la fila para el texarea
+const rowText1 = document.createElement("div");
+rowText1.classList.add("fieldset-row");
+fieldsetPedido.appendChild(rowText1);
 r1c1Ped.appendChild(labelText);
 
+
+//Creación del textarea
 const inpText = document.createElement("textarea");
 inpText.setAttribute("id", "textArea");
 inpText.setAttribute("cols", 40);
 inpText.setAttribute("rows", 4)
-inpText.setAttribute("placeholder", "Escribe aquí");
+inpText.setAttribute("placeholder", "Escribe aquí:");
 
 r1c1Ped.appendChild(inpText);
+
 
 //div de la columna donde irá la segunda imagen
 const r2c2Ped = document.createElement("div");

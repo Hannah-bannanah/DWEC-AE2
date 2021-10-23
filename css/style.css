@@ -112,7 +112,16 @@ input.validar:invalid {
 	outline:  1px solid #d60303;
 }
 
+
+
 input[type="radio"].validar:invalid {
 	outline: none;
 	border-radius: 50%;
+}.contacto .inline-column{
+	padding: 2%;;
+}
+
+
+.contacto label{
+	padding:2%;
 }
