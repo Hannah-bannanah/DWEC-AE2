@@ -98,6 +98,15 @@ input[type="checkbox"].validar:invalid {
 	height: 1rem;
 }
 
+.contacto .inline-column{
+	padding: 2%;;
+}
+
+
+.contacto label{
+	padding:2%;
+}
+
 /* input[type="radio"].validar:invalid {
 	-webkit-appearance: none;
 	-moz-appearance: none;
