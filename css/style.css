@@ -8,6 +8,7 @@ body {
 
 form {
 	width: 80%;
+	max-width: 60rem;
 	margin: 1rem auto
 }
 
@@ -23,7 +24,7 @@ form fieldset:first-child {
 	border: 2px solid purple;
 }
 
-.form-title {
+.form__titulo {
 	color:purple;
 	font-size: 1.2rem;
 }
@@ -49,7 +50,17 @@ fieldset legend {
 	flex-direction: row;
 }
 
-.form__actions {
+input, 
+select,
+input + label {
+	cursor: pointer;
+}
+
+label[for="textArea"] {
+	margin-top: 1rem
+}
+
+#acciones {
   display: flex;
   justify-content: space-evenly;
 }
@@ -90,15 +101,23 @@ button:active {
 	outline:  1px solid #d60303;
 }
 
-input[type="checkbox"].validar:invalid {
+input.validar:invalid {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	width:1rem;
-	height: 1rem;
+	width:0.8rem;
+	height: 0.8rem;
+	background: #f8aaaa;
+	border: 1px solid #d60303;
+	outline:  1px solid #d60303;
 }
 
-.contacto .inline-column{
+
+
+input[type="radio"].validar:invalid {
+	outline: none;
+	border-radius: 50%;
+}.contacto .inline-column{
 	padding: 2%;;
 }
 
@@ -106,11 +125,3 @@ input[type="checkbox"].validar:invalid {
 .contacto label{
 	padding:2%;
 }
-
-/* input[type="radio"].validar:invalid {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	width:1rem;
-	height: 1rem;
-} */

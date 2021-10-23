@@ -18,27 +18,27 @@ form.appendChild(fieldsetGeneral);
 
 const leyendaFormulario = document.createElement("legend");
 leyendaFormulario.textContent = "Realizar Pedido";
-leyendaFormulario.classList.add("form-title");
+leyendaFormulario.classList.add("form__titulo");
 fieldsetGeneral.appendChild(leyendaFormulario);
 
 //fieldset de Contacto
 const fieldsetContacto = document.createElement("fieldset");
-fieldsetContacto.classList.add("contacto");
+fieldsetContacto.setAttribute("id", "contacto");
 fieldsetGeneral.appendChild(fieldsetContacto);
 
 //fieldset de Opciones
 const fieldsetOpciones = document.createElement("fieldset");
-fieldsetOpciones.classList.add("opciones-pizza");
+fieldsetOpciones.setAttribute("id", "opciones-pizza");
 fieldsetGeneral.appendChild(fieldsetOpciones);
 
 //fieldset del pedido
 const fieldsetPedido = document.createElement("fieldset");
-fieldsetPedido.classList.add("restaurante");
+fieldsetPedido.setAttribute("id", "restaurante");
 fieldsetGeneral.appendChild(fieldsetPedido);
 
 //fieldset de los botones de Submit y Reset
 const fieldsetAcciones = document.createElement("fieldset");
-fieldsetAcciones.classList.add("form__actions");
+fieldsetAcciones.setAttribute("id", "acciones");
 fieldsetGeneral.appendChild(fieldsetAcciones);
 
 /*
@@ -96,6 +96,7 @@ labelCon3.setAttribute("id", "labelCon3");
 labelCon3.setAttribute("for", "inpCon3");
 labelCon3.textContent = "Apellidos ";
 
+
 // Input de la 3º caja de texto
 const inpCon3 = document.createElement("input");
 inpCon3.setAttribute("type", "Text");
@@ -119,6 +120,7 @@ r2c2Con.appendChild(rowCon2);
 
 // Label de la 2º caja de texto
 const labelCon2 = document.createElement("label");
+
 labelCon2.setAttribute("id", "labelCon2");
 labelCon2.setAttribute("for", "inpCon2");
 labelCon2.textContent = "Dirección   ";
@@ -140,6 +142,7 @@ r2c2Con.appendChild(rowCon4);
 
 // Label de la 4º caja de texto
 const labelCon4 = document.createElement("label");
+
 labelCon4.setAttribute("id", "labelCon4");
 labelCon4.setAttribute("for", "inpCon4");
 labelCon4.textContent = "Teléfono ";
@@ -210,7 +213,7 @@ inpCbox1.setAttribute("value", "Quesos");
 //etiqueta label para el checkbox
 const labelCbox1 = document.createElement("label");
 labelCbox1.setAttribute("id", "labelcbox1");
-labelCbox1.setAttribute("for", "inpCbox1");
+labelCbox1.setAttribute("for", "cbox1");
 labelCbox1.textContent = "Mezcla de quesos";
 //Vincular el checkbox y label al div
 rowCbox1.appendChild(inpCbox1);
@@ -228,7 +231,7 @@ inpCbox2.setAttribute("value", "Champiñones");
 //etiqueta label para el checkbox
 const labelCbox2 = document.createElement("label");
 labelCbox2.setAttribute("id", "labelcbox2");
-labelCbox2.setAttribute("for", "inpCbox2");
+labelCbox2.setAttribute("for", "cbox2");
 labelCbox2.textContent = "Champiñones";
 //Vincular el checkbox y label al div
 rowCbox2.appendChild(inpCbox2);
@@ -246,7 +249,7 @@ inpCbox3.setAttribute("value", "Bacon");
 //etiqueta label para el checkbox
 const labelCbox3 = document.createElement("label");
 labelCbox3.setAttribute("id", "labelcbox3");
-labelCbox3.setAttribute("for", "inpCbox3");
+labelCbox3.setAttribute("for", "cbox3");
 labelCbox3.textContent = "Bacon";
 //Vincular el checkbox y label al div
 rowCbox3.appendChild(inpCbox3);
@@ -264,7 +267,7 @@ inpCbox4.setAttribute("value", "Aceitunas");
 //etiqueta label para el checkbox
 const labelCbox4 = document.createElement("label");
 labelCbox4.setAttribute("id", "labelcbox4");
-labelCbox4.setAttribute("for", "inpCbox4");
+labelCbox4.setAttribute("for", "cbox4");
 labelCbox4.textContent = "Tomates cherry";
 //Vincular el checkbox y label al div
 r1c1Opc.appendChild(inpCbox4);
@@ -334,7 +337,7 @@ inpRb1.setAttribute("type", "radio");
 inpRb1.setAttribute("id", "rb1");
 inpRb1.setAttribute("name", "rbmasa");
 inpRb1.setAttribute("value", "fina");
-inpRb1.setAttribute("required", "true");
+inpRb1.setAttribute("required", "required");
 //Etiqueta label
 const labelRbMasa1 = document.createElement("label");
 labelRbMasa1.setAttribute("id", "labelrb1");
@@ -354,7 +357,8 @@ inpRb2.setAttribute("type", "radio");
 inpRb2.setAttribute("id", "rb2");
 inpRb2.setAttribute("name", "rbmasa");
 inpRb2.setAttribute("value", "normal");
-inpRb2.setAttribute("required", "true");
+inpRb2.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbMasa2 = document.createElement("label");
 labelRbMasa2.setAttribute("id", "labelrb2");
@@ -374,7 +378,8 @@ inpRb3.setAttribute("type", "radio");
 inpRb3.setAttribute("id", "rb3");
 inpRb3.setAttribute("name", "rbmasa");
 inpRb3.setAttribute("value", "extra");
-inpRb3.setAttribute("required", "true");
+inpRb3.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbMasa3 = document.createElement("label");
 labelRbMasa3.setAttribute("id", "labelrb3");
@@ -394,7 +399,8 @@ inpRb4.setAttribute("type", "radio");
 inpRb4.setAttribute("id", "rb4");
 inpRb4.setAttribute("name", "rbmasa");
 inpRb4.setAttribute("value", "extraqueso");
-inpRb4.setAttribute("required", "true");
+inpRb4.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbMasa4 = document.createElement("label");
 labelRbMasa4.setAttribute("id", "labelrb4");
@@ -434,7 +440,7 @@ inpRb5.setAttribute("type", "radio");
 inpRb5.setAttribute("id", "rb5");
 inpRb5.setAttribute("name", "rbtam");
 inpRb5.setAttribute("value", "pequeña");
-inpRb5.setAttribute("required", "true");
+inpRb5.setAttribute("required", "required");
 
 //Etiqueta label
 const labelRbTam5 = document.createElement("label");
@@ -455,7 +461,8 @@ inpRb6.setAttribute("type", "radio");
 inpRb6.setAttribute("id", "rb6");
 inpRb6.setAttribute("name", "rbtam");
 inpRb6.setAttribute("value", "mediana");
-inpRb6.setAttribute("required", "true");
+inpRb6.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbTam6 = document.createElement("label");
 labelRbTam6.setAttribute("id", "labelrb6");
@@ -475,7 +482,8 @@ inpRb7.setAttribute("type", "radio");
 inpRb7.setAttribute("id", "rb7");
 inpRb7.setAttribute("name", "rbtam");
 inpRb7.setAttribute("value", "familiar");
-inpRb7.setAttribute("required", "true");
+inpRb7.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbTam7 = document.createElement("label");
 labelRbTam7.setAttribute("id", "labelrb7");
@@ -495,7 +503,9 @@ inpRb8.setAttribute("type", "radio");
 inpRb8.setAttribute("id", "rb8");
 inpRb8.setAttribute("name", "rbtam");
 inpRb8.setAttribute("value", "dinosaurica");
-inpRb8.setAttribute("required", "true");
+
+inpRb8.setAttribute("required", "required");
+
 //Etiqueta label
 const labelRbTam8 = document.createElement("label");
 labelRbTam8.setAttribute("id", "labelrb8");
@@ -534,7 +544,7 @@ r1c1Ped.appendChild(labelSelect);
 const selectRestaurante = document.createElement("select");
 selectRestaurante.setAttribute("name", "restaurante");
 selectRestaurante.setAttribute("id", "restaurante");
-selectRestaurante.setAttribute("required", "true");
+selectRestaurante.setAttribute("required", "required");
 r1c1Ped.appendChild(selectRestaurante);
 
 //opciones del select
@@ -564,6 +574,7 @@ selectRestaurante.appendChild(opcionB);
 selectRestaurante.appendChild(opcionC);
 selectRestaurante.appendChild(opcionD);
 
+
 //Sección del textarea
 
 //Creación de la fila para el label
@@ -571,25 +582,27 @@ const rowText = document.createElement("div");
 rowText.classList.add("fieldset-row");
 fieldsetPedido.appendChild(rowText);
 
+
 //Label del textarea
 const labelText = document.createElement("label");
-labelText.setAttribute("for", "restaurante");
+labelText.setAttribute("for", "textArea");
 labelText.textContent = "Introduce aquí información sobre alergias u otras notas adicionales: ";
-rowText.appendChild(labelText);
 
 //Creación de la fila para el texarea
 const rowText1 = document.createElement("div");
 rowText1.classList.add("fieldset-row");
 fieldsetPedido.appendChild(rowText1);
+r1c1Ped.appendChild(labelText);
+
 
 //Creación del textarea
 const inpText = document.createElement("textarea");
-inpText.setAttribute("id", "TextArea");
-inpText.setAttribute("cols", 10);
+inpText.setAttribute("id", "textArea");
+inpText.setAttribute("cols", 40);
 inpText.setAttribute("rows", 4)
 inpText.setAttribute("placeholder", "Escribe aquí:");
 
-rowText1.appendChild(inpText);
+r1c1Ped.appendChild(inpText);
 
 
 //div de la columna donde irá la segunda imagen
@@ -621,7 +634,7 @@ terminos.setAttribute("type", "checkbox");
 terminos.setAttribute("name", "terminos");
 terminos.setAttribute("id", "terminos");
 terminos.setAttribute("value", "s");
-terminos.setAttribute("required", "true");
+terminos.setAttribute("required", "required");
 r2c1Ped.appendChild(terminos);
 
 const labelTerminos = document.createElement("label");
@@ -629,7 +642,9 @@ labelTerminos.setAttribute("for", "terminos");
 labelTerminos.textContent = "Acepto los términos y condiciones";
 r2c1Ped.appendChild(labelTerminos);
 
-//creacion de la seccion de acciones
+/*
+===================================================== validación del formulario ===================================================== 
+*/
 //boton de envio
 const submit = document.createElement("button");
 submit.setAttribute("type", "submit");
@@ -639,6 +654,7 @@ submit.textContent = "Realizar Pedido";
 submit.classList.add("cta");
 fieldsetAcciones.appendChild(submit);
 
+//boton de reseteo
 const reset = document.createElement("button");
 reset.setAttribute("type", "reset");
 reset.setAttribute("name", "reset");
