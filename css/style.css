@@ -117,8 +117,10 @@ input.validar:invalid {
 input[type="radio"].validar:invalid {
 	outline: none;
 	border-radius: 50%;
-}.contacto .inline-column{
-	padding: 2%;;
+}
+
+.contacto .inline-column{
+	padding: 5%;
 }
 
 
