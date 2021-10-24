@@ -119,11 +119,9 @@ input[type="radio"].validar:invalid {
 	border-radius: 50%;
 }
 
-.contacto .inline-column {
-	padding: 5%;
+#contacto .inline-column {
+	padding: 2%;
 }
 
 
-.contacto label{
-	padding:2%;
-}
+
