@@ -72,7 +72,7 @@ r1c1Con.appendChild(rowCon1);
 // Label de la 1º caja de texto
 const labelCon1 = document.createElement("label");
 labelCon1.setAttribute("id", "labelCon1");
-labelCon1.setAttribute("for", "inpCon1");
+labelCon1.setAttribute("for", "ConText1");
 labelCon1.textContent = "Nombre ";
 
 // Input de la 1º caja de texto
@@ -93,7 +93,7 @@ r1c1Con.appendChild(rowCon3);
 // Label de la 3º caja de texto
 const labelCon3 = document.createElement("label");
 labelCon3.setAttribute("id", "labelCon3");
-labelCon3.setAttribute("for", "inpCon3");
+labelCon3.setAttribute("for", "ConText3");
 labelCon3.textContent = "Apellidos ";
 
 
@@ -122,7 +122,7 @@ r2c2Con.appendChild(rowCon2);
 const labelCon2 = document.createElement("label");
 
 labelCon2.setAttribute("id", "labelCon2");
-labelCon2.setAttribute("for", "inpCon2");
+labelCon2.setAttribute("for", "ConText2");
 labelCon2.textContent = "Dirección   ";
 
 // Input de la 2º caja de texto
@@ -144,7 +144,7 @@ r2c2Con.appendChild(rowCon4);
 const labelCon4 = document.createElement("label");
 
 labelCon4.setAttribute("id", "labelCon4");
-labelCon4.setAttribute("for", "inpCon4");
+labelCon4.setAttribute("for", "ConText4");
 labelCon4.textContent = "Teléfono ";
 
 // Input de la 4º caja de texto
@@ -165,7 +165,7 @@ r2c2Con.appendChild(rowCon6);
 //// Label de la 6º caja de texto
 const labelCon6 = document.createElement("label");
 labelCon6.setAttribute("id", "labelCon6");
-labelCon6.setAttribute("for", "inpCon6");
+labelCon6.setAttribute("for", "ConText6");
 labelCon6.textContent = "DNI ";
 
 // Input de la 6º caja de texto
